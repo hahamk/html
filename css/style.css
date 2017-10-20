@@ -17,10 +17,10 @@ ul li, ol li{list-style:none}
 .gnb-area a.home {position:absolute;top:12px;left:0;display:block;color:#74718b}
 .gnb-area a.home:hover {color:#c7c7c7}
 .gnb-area ul {position:absolute;top:12px;right:1px;height:17px;line-height:19px}
-.gnb-area ul li {float:left;padding:0 9px;background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/blt.png') no-repeat 100% 3px;line-height:20px}
+.gnb-area ul li {float:left;padding:0 9px;background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/blt.png') no-repeat 100% 3px;line-height:20px}
 .gnb-area ul li.share {padding:0 0 0 9px;background:none}
 .gnb-area ul li.share span{color:#74718b; }
-.gnb-area ul li.share a {display:inline-block;width:18px;height:17px;background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/btn.png') no-repeat 0 0;padding:0; vertical-align:top;line-height:0; text-indent:-9999em}
+.gnb-area ul li.share a {display:inline-block;width:18px;height:17px;background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/btn.png') no-repeat 0 0;padding:0; vertical-align:top;line-height:0; text-indent:-9999em}
 .gnb-area ul li.share a.twitter{background-position:-227px -336px; margin:0 10px 0 7px}
 .gnb-area ul li.share a.twitter:hover{background-position:-227px -359px}
 .gnb-area ul li.share a.facebook{background-position:-255px -336px}
@@ -30,16 +30,16 @@ ul li, ol li{list-style:none}
 .box{position:relative;width:1060px;margin:0 auto;z-index:2}
 
 /* title */
-.mainvisual{width:100%;background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/mainvisual.png') no-repeat 50% 0 #ffe2e6; }
+.mainvisual{width:100%;background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/mainvisual.png') no-repeat 50% 0 #ffe2e6; }
 .mainvisual .contents{width:100%; height:654px; font-size:0;line-height:0;text-indent:-9999px}
 
 /* step01 */
-.step01{width:100%; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/bg_step01.png') no-repeat 50% 0; }
+.step01{width:100%; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/bg_step01.png') no-repeat 50% 0; }
 .step01 .contents{width:960px; margin:0 auto; height:838px;}
 .step01 .contents h2{font-size:0;line-height:0;text-indent:-9999px; height:256px}
 
 /* step02 */
-.vote{width:100%; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/bg_step02.png') no-repeat 50% 0 #f7f7f7; }
+.vote{width:100%; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/bg_step02.png') no-repeat 50% 0 #f7f7f7; }
 .vote .contents{width:960px; margin:0 auto; height:1137px; overflow:hidden;}
 .vote .contents h2{font-size:0;line-height:0;text-indent:-9999px; height:303px}
 
@@ -54,7 +54,7 @@ ul li, ol li{list-style:none}
 .vote input.radio + label {margin-left:0}
 :root input.radio + label:before{
 	content:'';display:inline-block;width:205px;height:334px; vertical-align:middle;
-	background-image:url('//image.genie.co.kr/imageg/web/promo_2017/1018/bg_radio.png');background-repeat:no-repeat;
+	background-image:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/bg_radio.png');background-repeat:no-repeat;
 }
 :root input.radio + label:before {width:205px;height:334px;background-position:41px 0}
 :root input.radio:checked + label:before {background-position:-211px 0}
@@ -64,7 +64,7 @@ ul li, ol li{list-style:none}
 }
 
 .vote_btn{text-align:center; padding-top:20px;}
-.vote_btn a{background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/btn.png') no-repeat 0 0; width:290px; height:75px; display:inline-block; text-indent:-9999em; margin:0 7px; }
+.vote_btn a{background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/btn.png') no-repeat 0 0; width:290px; height:75px; display:inline-block; text-indent:-9999em; margin:0 7px; }
 .vote_btn a.btn_vote{background-position:0 0}
 .vote_btn a.btn_vote:hover{background-position:0 -81px}
 .vote_btn a.btn_info{background-position:-304px 0}
@@ -72,11 +72,11 @@ ul li, ol li{list-style:none}
 
 
 /* sns */
-.snsarea{width:100%; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/bg_sns.png') no-repeat 50% 0 #f0f0f0; }
+.snsarea{width:100%; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/bg_sns.png') no-repeat 50% 0 #f0f0f0; }
 .snsarea .contents{width:960px; margin:0 auto; height:150px;}
 .snsarea .contents ul{padding:40px 0 0 326px;}
 .snsarea .contents li{display:inline-block; margin-left:8px;}
-.snsarea .contents li a{width:200px; height:75px; display:inline-block; text-indent:-9999em; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/btn.png') no-repeat 0 0; }
+.snsarea .contents li a{width:200px; height:75px; display:inline-block; text-indent:-9999em; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/btn.png') no-repeat 0 0; }
 .snsarea .contents li a.btn_fb{background-position: 0 -164px; }
 .snsarea .contents li a.btn_fb:hover{background-position: 0 -247px; }
 .snsarea .contents li a.btn_twt{background-position: -210px -164px; }
@@ -85,7 +85,7 @@ ul li, ol li{list-style:none}
 .snsarea .contents li a.btn_kakao:hover{background-position: -420px -247px; }
 
 /* md 스페셜이용권 */
-.md{width:100%; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/bg_specail.png') no-repeat 50% 0; }
+.md{width:100%; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/bg_specail.png') no-repeat 50% 0; }
 .md .contents{width:960px; margin:0 auto; height:735px; overflow:hidden}
 .md .contents ul{width:1100px; margin-top:197px;}
 .md .contents ul:after{content:""; clear:both; display:block; }
@@ -97,17 +97,17 @@ ul li, ol li{list-style:none}
 .popup.mdly{width:874px; }
 .popup.mdly .layer-close{position:absolute; right:17px; top:17px; width:50px; height:50px; text-indent:-9999em;}
 .popup.mdly .md_vote{position:absolute; bottom:52px; left:50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); display:block; width:290px; height:75px; text-indent:-9999em; }
-.md_ly01{width:874px; height:500px; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/md01.png') no-repeat 0 0; }
-.md_ly02{width:874px; height:550px; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/md02.png') no-repeat 0 0; }
-.md_ly03{width:874px; height:501px; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/md03.png') no-repeat 0 0; }
-.md_ly04{width:874px; height:501px; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/md04.png') no-repeat 0 0; }
-.md_ly05{width:874px; height:570px; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/md05.png') no-repeat 0 0; }
-.md_ly06{width:874px; height:500px; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/md06.png') no-repeat 0 0; }
-.md_ly07{width:874px; height:520px; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/md07.png') no-repeat 0 0; }
+.md_ly01{width:874px; height:500px; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/md01.png') no-repeat 0 0; }
+.md_ly02{width:874px; height:550px; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/md02.png') no-repeat 0 0; }
+.md_ly03{width:874px; height:501px; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/md03.png') no-repeat 0 0; }
+.md_ly04{width:874px; height:501px; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/md04.png') no-repeat 0 0; }
+.md_ly05{width:874px; height:570px; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/md05.png') no-repeat 0 0; }
+.md_ly06{width:874px; height:500px; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/md06.png') no-repeat 0 0; }
+.md_ly07{width:874px; height:520px; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/md07.png') no-repeat 0 0; }
 
 
 /* 꼭알아두세요 */
-.infotxt{width:100%; background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/bg_txt.png') no-repeat 50% 0 #0d2853; }
+.infotxt{width:100%; background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/bg_txt.png') no-repeat 50% 0 #0d2853; }
 .infotxt .contents{width:960px; margin:0 auto; height:535px; text-indent:-9999em; position:relative}
 .infotxt .contents li .member{position:absolute; left:8px; top:252px; width:70px; height:22px;}
 .infotxt .contents li .customer{position:absolute; left:300px; top:334px; width:130px; height:20px;}
@@ -116,12 +116,12 @@ ul li, ol li{list-style:none}
 
 
 /* popup */
-.modalLayer {background:url('//image.genie.co.kr/imageg/web/promo_2017/1018/modal_bg.png') repeat 0 0}
+.modalLayer {background:url('http://image.genie.co.kr/imageg/web/promo_2017/1018/modal_bg.png') repeat 0 0}
 
 .popup {display:none;position:relative;width:468px;font-family:'Malgun Gothic','맑은고딕'}
 .popup .popup-header {position:relative;height:62px;background-color:#05b5e5;padding:0}
 .popup .popup-header h3 {display:inline-block;margin:0 0 0 25px;font-size:22px;color:#ffffff;line-height:59px}
-.popup .popup-header .layer-close {position:absolute;top:16px;right:20px;width:30px;height:30px;background:url('//image.genie.co.kr/imageg/web/promo_2016/0226/btn_close.png') no-repeat;font-size:0;line-height:0;text-indent:-9999px}
+.popup .popup-header .layer-close {position:absolute;top:16px;right:20px;width:30px;height:30px;background:url('http://image.genie.co.kr/imageg/web/promo_2016/0226/btn_close.png') no-repeat;font-size:0;line-height:0;text-indent:-9999px}
 .popup .popup-contents{background-color:#fff;text-align:center;padding:50px 0;font-size:14px;line-height:140%}
 .popup .popup-contents.small{padding:50px 0 10px}
 .popup .popup-contents h3 {color:#444444}
@@ -149,7 +149,7 @@ ul li, ol li{list-style:none}
 .popup .pop-vote:after{content:""; display:block; clear:both;}
 .popup .pop-vote li{position:relative;float:left;width:50%;margin-bottom:20px;font-size:22px;font-weight:bold}
 .popup .pop-vote .small-txt{display:block;position:absolute;left:50px;top:30px;font-size:16px;color:#333}
-.popup .pop-img{width:100%;height:260px;background:url('//image.genie.co.kr/imageg/web/promo_2017/0920/pop_img.jpg') no-repeat;font-size:0;line-height:0;text-indent:-9999px}
+.popup .pop-img{width:100%;height:260px;background:url('http://image.genie.co.kr/imageg/web/promo_2017/0920/pop_img.jpg') no-repeat;font-size:0;line-height:0;text-indent:-9999px}
 .popup .pop-img.img1{background-position:0 0}
 .popup .pop-img.img2{background-position:0 -260px}
 .popup .pop-img.img3{background-position:0 -520px}
