@@ -14,27 +14,30 @@ textarea, input{background:#ffffff}
 .box{ width:100%; height:100%; position:relative; color:#ffffff; font-size:24pt;}
 .vm{position: absolute; left:50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-.tab{position:fixed; left:0; bottom:0; width:100%; z-index:10;}
+.tab{position:absolute; left:0; top:398px; width:100%; z-index:10;}
+.tab.f-nav{position:fixed}
 .tab img{width:100%; }
 .tab.f-nav, .tab.f-nav ul{top:0;}
 .tab ul{width:100%; left:0; bottom:0; position:absolute;}
 .tab ul:after{display:block; content:""; clear:both;}
 .tab li{float:left; width:50%; }
 .tab li a{display:block; font-size:30px; height:100%; text-indent:-9999em}
-.tab .update{width:100%; height:67px; background:url('../img/foot.gif') no-repeat center 15px #ffffff;background-size:326px 34px; position:fixed; left:0; bottom:0; z-index:-1; text-indent:-9999em}
+.tab .update{display:none; width:100%; height:67px; background:url('../img/foot.gif') no-repeat center 15px #ffffff;background-size:326px 34px; position:fixed; left:0; bottom:0; z-index:-1; text-indent:-9999em}
+.tab.f-nav .update{display:block}
+.contents{width:360px; margin:0 auto; position:relative;}
 
 /* 타이틀 */
-.title .contents{width:360px; height:401px; background:url('../img/top_img.png') no-repeat 0 0;background-size:100%; text-indent: -9999em; margin:0 auto 0 -180px; }
+.title .contents{height:471px; background:url('../img/top_img.png') no-repeat 0 0;background-size:100%; text-indent: -9999em; }
 
 /* 지니어스 소개 */
 .voice{background:#62cfef; }
-.voice .contents{width:269px; height:377px; margin:0 auto 0 -134px; background:url('../img/intro_tit01.png') no-repeat 0 0;background-size:100%; }
-.voice .img1{position:absolute; left:36px; bottom:0; width:196px; height:200px; background:url('../img/voice_img.png') no-repeat 0 0; background-size:351px}
-.voice .img2{position:absolute; left:26px; bottom:100px; width:215px; height:85px; background:url('../img/voice_img.png') no-repeat 0 -238px; background-size:351px; z-index:1}
-.voice .img3{position:absolute; left:70px; bottom:-18px; width:121px; height:121px; background:url('../img/voice_img.png') no-repeat -227px 0; background-size:351px; z-index:2}
+.voice .contents{width:269px; height:471px; background:url('../img/intro_tit01.png') no-repeat center 60px;background-size:100%; }
+.voice .img1{position:absolute; left:36px; bottom:35px; width:196px; height:200px; background:url('../img/voice_img.png') no-repeat 0 0; background-size:351px}
+.voice .img2{position:absolute; left:26px; bottom:135px; width:215px; height:85px; background:url('../img/voice_img.png') no-repeat 0 -238px; background-size:351px; z-index:1}
+.voice .img3{position:absolute; left:70px; bottom:17px; width:121px; height:121px; background:url('../img/voice_img.png') no-repeat -227px 0; background-size:351px; z-index:2}
 
 .sound{background:#27282d; }
-.sound .contents{width:269px; height:377px; margin:0 auto 0 -134px; background:url('../img/intro_tit01.png') no-repeat 0 0;background-size:100%; }
+.sound .contents{width:269px; height:471px; background:url('../img/intro_tit01.png') no-repeat center 60px; background-size:100%; }
 .sound .img1{position:absolute; left:22px; bottom:0; width:221px; height:214px; background:url('../img/intro_img01.png') no-repeat 0 0;background-size:100%}
 
 /* motion */

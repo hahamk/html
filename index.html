@@ -25,8 +25,8 @@
 
 
 <!-- TITTLE -->
-<section class="box title">
-	<div class="contents vm">
+<section class="title">
+	<div class="contents">
 		<h1>음성 명령에서 사운드 검색까지</h1>
 		<h2>만나서 반가워요 감성 AI 지니어스</h2>
 	</div>
@@ -34,8 +34,8 @@
 <!-- // TITTLE -->
 
 <!-- 지니보이스 -->
-<section class="box voice">
-	<div class="contents vm">
+<section class="voice">
+	<div class="contents">
 		<h1 class="hide">지니보이스의 진화 지니어스한 음악 AI</h1> 
 		<h2 class="hide">국내 최초 음악 AI 지니보이스 기술과 SoundHound의 사운드 서치 엔진이 더해진 지니의 진화된 AI 서비스입니다.</h2>
 		<div class="img1 fadeIn" data-scroll="toggle(.fadeIn, .fadeOut)"></div>
@@ -45,8 +45,8 @@
 </section>
 
 <!--사운드 검색 -->
-<section class="box sound">
-	<div class="contents vm">
+<section class="sound">
+	<div class="contents">
 		<h1 class="hide">지니보이스의 진화 지니어스한 음악 AI</h1>
 		<h2 class="hide">국내 최초 음악 AI 지니보이스 기술과 SoundHound의 사운드 서치 엔진이 더해진 지니의 진화된 AI 서비스입니다.</h2>
 		<div class="img1 voiceIn" data-scroll="toggle(.voiceIn, .voiceOut)"></div>
@@ -54,40 +54,6 @@
 </section>
 
 <script type="text/javascript">
-        window.onload = function () {
-            $(".box").each(function () {
-                // 개별적으로 Wheel 이벤트 적용
-                $(this).on("mousewheel DOMMouseScroll", function (e) {
-                    e.preventDefault();
-                    var delta = 0;
-                    if (!event) event = window.event;
-                    if (event.wheelDelta) {
-                        delta = event.wheelDelta / 120;
-                        if (window.opera) delta = -delta;
-                    } else if (event.detail) delta = -event.detail / 3;
-                    var moveTop = null;
-                    // 마우스휠을 위에서 아래로
-                    if (delta < 0) {
-                        if ($(this).next() != undefined) {
-                            moveTop = $(this).next().offset().top;
-                        }
-                    // 마우스휠을 아래에서 위로
-                    } else {
-                        if ($(this).prev() != undefined) {
-                            moveTop = $(this).prev().offset().top;
-                        }
-                    }
-                    // 화면 이동 0.8초(800)
-                    $("html,body").stop().animate({
-                        scrollTop: moveTop + 'px'
-                    }, {
-                        duration: 800, complete: function () {
-                        }
-                    });
-                });
-            });
-        }
-		
 		window.counter = function() {
 			// this refers to the html element with the data-scroll-showCallback tag
 			var span = this.querySelector('span');
@@ -104,7 +70,7 @@
 	/*tab*/
 	var nav = $('.tab');
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 400) {
 			nav.addClass("f-nav");
 		} else {
 			nav.removeClass("f-nav");
