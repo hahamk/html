@@ -2,148 +2,188 @@
 
 * {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:middle;background:transparent}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
-body {min-width:320px;max-width:640px;-webkit-text-size-adjust:100%; margin:0 auto;line-height:1.5;color:#000;background:#ffffff}
 nav, ul {list-style:none}
 a {-webkit-tap-highlight-color:transparent;text-decoration:none}
-button {display:block;margin:0;padding:0;background:none;border:0;font-size:0;line-height:0;text-indent:-9999px;cursor:pointer}
-button::-moz-focus-inner {padding:0;border:0}
 *:focus {outline:none}
+em{font-style:normal;}
+textarea, input{background:#ffffff}
 .hide {display:block;width:0;height:0;overflow:hidden;font-size:0;line-height:0;text-indent:-9999px}
+ html,body{ margin:0; padding:0; width:100%; height:100%;}
 
-/* title */
-.mainvisual{position:relative;width:100%;padding-top:101.3888%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/title.png') no-repeat 0 0;background-size:100% 100%}
+ /*공통*/
+.box{ width:100%; height:100%; position:relative; color:#ffffff; font-size:24pt;}
+.vm{position: absolute; left:50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-/*step01*/
-.step01{background:#ffffff}
-.step01 h2{width:100%;padding-top:36.3888%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/tit_step01.png') no-repeat 0 0;background-size:100% 100%}
+.tab{position:fixed; left:0; bottom:0; width:100%; z-index:10;}
+.tab img{width:100%; }
+.tab.f-nav, .tab.f-nav ul{top:0;}
+.tab ul{width:100%; left:0; bottom:0; position:absolute;}
+.tab ul:after{display:block; content:""; clear:both;}
+.tab li{float:left; width:50%; }
+.tab li a{display:block; font-size:30px; height:100%; text-indent:-9999em}
+.tab .update{width:100%; height:67px; background:url('../img/foot.gif') no-repeat center 15px #ffffff;background-size:326px 34px; position:fixed; left:0; bottom:0; z-index:-1; text-indent:-9999em}
 
-/* music list*/
-.step01 .musiclist {margin:0;padding:0;font-size:14px;line-height:22px;color:#808080;letter-spacing:0.04em;}
-.step01 .musiclist ul {width:100%}
-.step01 .musiclist ul li {position:relative;height:55px;border-top:1px solid #e5e5e5;}
-.step01 .musiclist ul li.active {background:#e9f8f9;}
-.step01 .musiclist ul li .play {display:block;position:absolute;top:0px;left:0px;width:50px;height:50px;text-align:center;}
-.step01 .musiclist ul li .play span {display:block;width:24px;height:24px;margin:15px 0 0 15px;background:url('http://image.genie.co.kr/imageg/app/promo_2016/0901/ico.png') no-repeat -1px -41px;background-size:125px 125px;font-size:0;line-height:0;text-indent:-5000px;}
-.step01 .musiclist ul li .info {display:block;position:absolute;left:50px;right:52px;height:100%;font-size:12px;color:#a0a0a0;white-space:nowrap;}
-.step01 .musiclist ul li .info .title {display:block;width:auto;max-width:100%;margin-top:13px;font-size:14px;line-height:16px;color:#454b54;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
-.step01 .musiclist ul li .info .artist {display:block;width:auto;max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
-.step01 .musiclist ul li .time {position:absolute;top:0;right:0;width:52px;text-align:center;font-size:9px;color:#a0a0a0}
-.step01 .musiclist ul li .time span.ico {display:block;width:20px;height:20px;margin:0 auto;margin-top:11px;background:url('http:/http://image.genie.co.kr/imageg/app/promo_2016/0901/ico.png') no-repeat -40px 0;background-size:125px 125px;font-size:0;line-height:0;text-indent:-5000px;z-index:20;}
-.select_play .bd .song-list .btm_etc {position:absolute;bottom:12px;left:14px;}
-.select_play .bd .song-list .btm_etc:after{content:"";display:block;clear:both}
-.select_play .bd .song-list .btm_etc .etc_like {position:relative;float:left;padding-left:21px;line-height:15px;color:#888888;font-weight:bold;}
-.select_play .bd .song-list .btm_etc .etc_like .icon {position:absolute;top:0;left:0;width:15px;height:15px;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;display:block;background:url('http://image.genie.co.kr/imageg/app/promo_2016/0901/etc_like.png') no-repeat;}
-.select_play .bd .song-list .btm_etc .etc_like.checked .icon {background-position:0 -15px;}
-.select_play .bd .song-list .btm_etc .etc_review {position:relative;float:left;padding-left:21px;line-height:15px;margin-left:10px;color:#888888;font-weight:bold;}
-.select_play .bd .song-list .btm_etc .etc_review .icon {position:absolute;top:0;left:0;width:15px;height:15px;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;display:block;background:url('http://image.genie.co.kr/imageg/app/promo_2016/0901/etc_review.png') no-repeat;}
+/* 타이틀 */
+.title .contents{width:360px; height:401px; background:url('../img/top_img.png') no-repeat 0 0;background-size:100%; text-indent: -9999em; margin:0 auto 0 -180px; }
 
-/*step02*/
-.choice_list{padding:0 2% 3%}
-.vote{background:url('../im/bg_step02.png') no-repeat 0 0 #f7f7f7;background-size:100% 100%}
-.vote h2{width:100%;padding-top:43.3333%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/tit_step02.png') no-repeat 0 0;background-size:100% 100%}
-.vote .md_choice:after{display:block; clear:both; content:""; }
-.vote li{width:50%; float:left; position:relative; margin-bottom: 2%;}
-.vote li img{width:100%}
-.vote li input{position:absolute; left:0; top:0; opacity:0; filter:alpha(opacity=0); }
-.vote li label{display:block; }
-.vote input.radio + label:before{content:''; width:100%; height:100%; }
-.vote input.radio:checked + label:before {background:url('../im/goods_on.png') no-repeat; position:absolute; left:0; top:0; width:100%; height:100%; background-size:100%}
+/* 지니어스 소개 */
+.voice{background:#62cfef; }
+.voice .contents{width:269px; height:377px; margin:0 auto 0 -134px; background:url('../img/intro_tit01.png') no-repeat 0 0;background-size:100%; }
+.voice .img1{position:absolute; left:36px; bottom:0; width:196px; height:200px; background:url('../img/voice_img.png') no-repeat 0 0; background-size:351px}
+.voice .img2{position:absolute; left:26px; bottom:100px; width:215px; height:85px; background:url('../img/voice_img.png') no-repeat 0 -238px; background-size:351px; z-index:1}
+.voice .img3{position:absolute; left:70px; bottom:-18px; width:121px; height:121px; background:url('../img/voice_img.png') no-repeat -227px 0; background-size:351px; z-index:2}
 
-.vote_btn{width:100%;padding-top:22.2222%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/vote_btn.png') no-repeat 0 0;background-size:100% 100%; position:relative;}
-.vote_btn a{width:42%; height:55%; position:absolute; left:6%; top:0; }
-.vote_btn a:last-child{left:51%}
+.sound{background:#27282d; }
+.sound .contents{width:269px; height:377px; margin:0 auto 0 -134px; background:url('../img/intro_tit01.png') no-repeat 0 0;background-size:100%; }
+.sound .img1{position:absolute; left:22px; bottom:0; width:221px; height:214px; background:url('../img/intro_img01.png') no-repeat 0 0;background-size:100%}
 
-/*sns공유하기*/
-.snsarea{width:100%;padding-top:24.1666%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/sns.png') no-repeat 0 0;background-size:100% 100%; position:relative;}
-.snsarea a{width: 12%; height: 53%; position:absolute; top:22%; }
-.snsarea li:nth-child(1) a{left:31.5%; }
-.snsarea li:nth-child(2) a{left:48%; }
-.snsarea li:nth-child(3) a{left:64.5%; }
-.snsarea li:nth-child(4) a{left:81.5%; }
-
-/*md 스페셜 이용권*/
-.md{width:100%;}
-.md h2{width:100%;padding-top:29.4444%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/tit_md.png') no-repeat 0 0;background-size:100% 100%}
-.md li{width:100%;padding-top:97.3611%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/md02.png') no-repeat 0 0;background-size:100% 100%; position:relative;}
-.md li:first-child{background:url('../im/md01.png') no-repeat 0 0; background-size:100% 100%}
-.md li:last-child{background:url('../im/md03.png') no-repeat 0 0; background-size:100% 100%}
-.md li a{position:absolute; left:34%; bottom:8%; width:32%; height:11%; }
-
-/* caution */
-.caution {position:relative;width:100%;padding-top:117.9166%;font-size:0;line-height:0;text-indent:-9999px;background:url('../im/caution.png') no-repeat 0 0;background-size:100% 100%}
-.caution a{display:block;position:absolute;height:3.4%; }
-.caution a.member {top: 45.5%;left:57%;width:14.2%}
-.caution a.customer {top:63%;left:60%;width:25%}
-
-/* popup */
-.mtb-popup {display:none;position:relative;width:87.5%;max-width:560px}
-.mtb-content {background-color:#fff;max-width:560px}
-.mtb-popup .mtb-hd {position:relative;width:100%;height:40px;line-height:42px;background-color:#09b6e6;text-align:center}
-.mtb-popup .mtb-hd h3 {color:#fff;font-size:14px;font-weight:normal}
-.mtb-popup .mtb-bd {background-color:#fff;color:#282828;text-align:center;padding:25px 15px;font-size:14px;line-height:120%}
-.mtb-popup .mtb-bd strong{display:block;margin-bottom:5px;font-size:15px;line-height:150%;font-weight:600}
-.mtb-popup .mtb-bd .blue {vertical-align:baseline;color:#09b6e6}
-.mtb-popup .mtb-ft {position:relative;width:100%;height:40px;overflow:hidden;line-height:40px;border-top:1px solid #bfbfbf;text-align:center}
-.mtb-popup .mtb-ft a {width:100%;height:100%;display:block;text-decoration:none;font-size:14px;color:#282828;font-weight:normal;background-color:#fbfbfb;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-.mtb-popup .mtb-ft.col-2 a {width:50%;float:left}
-.mtb-popup .mtb-ft.col-2 a:first-child {border-right:1px solid #bfbfbf}
-/* 제3자 제공동의 */
-.mtb-popup .mtb-bd.large {padding:0}
-.mtb-popup .blue {color:#05b5e5 !important}
-.mtb-popup .mtb-bd .wrap-bg-1 {background-color:#fff;padding:12px 15px}
-.mtb-popup .mtb-bd .wrap-bg-2 {background-color:#f5f5f5;color:#282828;border-bottom:1px solid #e6e6e6;padding:12px 15px}
-.mtb-popup .mtb-bd .list-1 {text-align:left;margin-top:7px}
-.mtb-popup .mtb-bd .list-1 li {position:relative;padding-left:7px;font-size:10px;line-height:12px;color:#929292}
-.mtb-popup .mtb-bd .list-1 li:after {content:"";position:absolute;top:4px;left:0;width:2px;height:2px;border-radius:2px;background-color:#929292;display:block}
-.mtb-popup .mtb-bd h4 {margin-top:10px;font-size:12px;text-align:left;font-weight:normal;color:#282828}
-.mtb-popup .mtb-bd .icon-ek {position:relative;padding-left:14px;font-size:10px;line-height:12px;text-align:left;color:#929292}
-.mtb-popup .mtb-bd .icon-ek:after {content:"!";position:absolute;top:1px;left:0;width:10px;height:10px;display:block;border-radius:10px;background-color:#929292;color:#fff;font-weight:bold;text-align:center;font-size:7px;line-height:10px}
-.mtb-popup .mtb-bd .box_dl {margin-top:4px}
-.mtb-popup .mtb-bd .box_dl dl {border-top:1px solid #e6e6e6;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;padding:11px 20px}
-.mtb-popup .mtb-bd .box_dl dl:after{content:"";display:block;clear:both}
-.mtb-popup .mtb-bd .box_dl dl dt {width:30%;display:inline-block;color:#333333;font-size:12px;text-align:left;vertical-align:middle}
-.mtb-popup .mtb-bd .box_dl dl dd {width:70%;display:inline-block;color:#929292;font-size:12px;text-align:left;vertical-align:middle}
-.mtb-popup .mtb-bd .box_dl dl dd a {color:#929292 !important}
-.mtb-popup .mtb-bd .box_dl dl.first {border-radius:5px 5px 0 0}
-.mtb-popup .mtb-bd .box_dl dl.last {border-bottom:1px solid #e6e6e6;border-radius:0 0 5px 5px}
-.mtb-popup .mtb-scroll {overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}
-.mtb-popup .mtb-scroll::-webkit-scrollbar {width: 8px;height: 8px;border: 3px solid #fff}
-.mtb-popup .mtb-scroll::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: block;height: 1px;background: #efefef}
-.mtb-popup .mtb-scroll::-webkit-scrollbar-track {background: #efefef}
-.mtb-popup .mtb-scroll::-webkit-scrollbar-thumb {height: 50px;width: 50px;background: rgba(0,0,0,.2)}
-/* 앱 다운 */
-.pop_landing {width:100%;max-width:720px}
-.mtb-app-down {width:80%;height:0;padding-top:46.5%;overflow:hidden;background:url('http://image.genie.co.kr/imageg/app/promo_2016/1128/pop_landing.png') 50% 0 no-repeat;background-size:100% auto;margin:0 auto}
-.mtb-app-down .btn_landing{position:absolute;top:0;left:10%;right:10%;height:41%;display:block;font-size:0;line-height:0;text-indent:-9999px}
-.mtb-app-down .layer-close{display:block;position:absolute;top:60%;left:35%;width:30%;height:20%;font-size:0;line-height:0;text-indent:-9999px}
-
-html {font-size:8px}
-@media screen and (min-width: 440px){
-	html {font-size:9px}
+/* motion */
+.ios-blt-scroll {display:block;position:absolute;top:0;right:10%;z-index:9;width:25%;padding-top:25%;background:url('//image.genie.co.kr/imageg/app/promo_2017/0607/ios_blt_scroll.png') no-repeat 0 0;background-size:100% auto;
+opacity:0;font-size:0;line-height:0;text-indent:-9999px;-webkit-animation:mainScroll 3s;animation:mainScroll 3s}
+@-webkit-keyframes mainScroll {
+	from {opacity:0}
+	20% {opacity:0;top:75%}
+	30% {opacity:1}
+  75% {opacity:1;top:75%}
+	85% {opacity:0}
 }
-@media screen and (min-width: 480px){
-	html {font-size:10px}
-}
-@media screen and (min-width: 520px){
-	html {font-size:11px}
-}
-@media screen and (min-width: 560px){
-	html {font-size:12px}
-}
-@media screen and (min-width: 600px){
-	html {font-size:13px}
-}
-@media screen and (min-width: 640px){
-	html {font-size:14px}
+@keyframes mainScroll {
+	from {opacity:0}
+	20% {opacity:0;top:75%}
+	30% {opacity:1}
+  75% {opacity:1;top:75%}
+	85% {opacity:0}
 }
 
-.mtb-popup.mdly{width:335px; }
-.mtb-popup.mdly .layer-close{position:absolute; right:15px; top:10px; width:30px; height:30px; text-indent:-9999em;}
-.mtb-popup.mdly .md_vote{position:absolute; bottom:31px; left:50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); display:block; width:170px; height:50px; text-indent:-9999em; }
-.md_ly01{width:335px; height:388px; background:url('../im/mdly01.png') no-repeat 0 0; background-size:335px 388px;}
-.md_ly02{width:335px; height:329px; background:url('../im/mdly02.png') no-repeat 0 0; background-size:335px 329px;}
-.md_ly03{width:335px; height:329px; background:url('../im/mdly03.png') no-repeat 0 0; background-size:335px 329px;}
-.md_ly04{width:335px; height:470px; background:url('../im/mdly04.png') no-repeat 0 0; background-size:335px 470px;}
-.md_ly05{width:335px; height:400px; background:url('../im/mdly05.png') no-repeat 0 0; background-size:335px 400px;}
-.md_ly06{width:335px; height:367px; background:url('../im/mdly06.png') no-repeat 0 0; background-size:335px 367px;}
-.md_ly07{width:335px; height:385px; background:url('../im/mdly07.png') no-repeat 0 0; background-size:335px 385px;}
+.fadeIn-ani {-webkit-animation:fadeInAni 3.5s;animation:fadeInAni 3.5s}
+@-webkit-keyframes fadeInAni {
+	from {opacity:0}
+	20% {opacity:0}
+	30% {opacity:0}
+  75% {opacity:0}
+	85% {opacity:1}
+}
+@keyframes fadeInAni {
+	from {opacity:0}
+	20% {opacity:0}
+	30% {opacity:0}
+  75% {opacity:0}
+	85% {opacity:1}
+}
+
+.fadeIn {
+   opacity: 1;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+}
+
+.fadeOut {
+   opacity: 0;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fadeIn-delay {
+   opacity: 1;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+	 -webkit-transition-delay: .6s;
+	  transition-delay: .6s;
+}
+
+.fadeIn-delay3 {
+   opacity: 1;
+   transition: opacity .7s ease-in-out;
+   -moz-transition: opacity .7s ease-in-out;
+   -webkit-transition: opacity .7s ease-in-out;
+	 -webkit-transition-delay: 1s;
+	  transition-delay: 1s;
+}
+
+.playlistIn {
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+  -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1
+}
+
+.playlistOut {
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+  -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+.playlistOut {
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+  -webkit-transform: translate(0, -10%);
+  -moz-transform: translate(0, -10%);
+  -ms-transform: translate(0, -10%);
+  -o-transform: translate(0, -10%);
+  transform: translate(0, -10%);
+  opacity: 0
+}
+
+.fromLeftIn {
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+	-webkit-transition-delay: .6s;
+	transition-delay: .6s;
+}
+.fromLeftOut {
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+  -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+.fromLeftOut {
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+  -webkit-transform: translate(-50%, -10%);
+  -moz-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
+  -o-transform: translate(-50%, -10%);
+  transform: translate(-50%, -10%);
+  opacity: 0
+}
+.fromBottomIn {
+  transition: transform 2s ease, opacity 1s ease;
+  transition: transform 2s ease, opacity 1s ease, -webkit-transform 2s ease, -moz-transform 2s ease, -o-transform 2s ease;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.fromBottomOut{
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
+  -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+}
+.fromBottomOut {
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
+  -webkit-transform: translate(0, 15%);
+  -moz-transform: translate(0, 15%);
+  -ms-transform: translate(0, 15%);
+  -o-transform: translate(0, 15%);
+  transform: translate(0, 15%);
+  opacity: 1
+}
