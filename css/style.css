@@ -12,10 +12,10 @@ html,body{ margin:0; padding:0; width:100%; height:100%;}
 body {min-width:320px;max-width:720px;-webkit-text-size-adjust:100%;background-color:#fff;margin:0 auto;line-height:1.5;color:#000}
 
  /*공통*/
-.wrap{padding-bottom:18.75%;}
+.wrap{padding-bottom:17.5%;}
 .wrap section{position:relative;}
 /* update */
-.update {position:fixed;bottom:0;width:100%;min-width:320px;max-width:720px;padding-top:18.75%;background:url('//image.genie.co.kr/imageg/app/promo_2017/0817/ar_update.png') no-repeat 0 100%;background-size:100%;font-size:0;line-height:0;text-indent:-9999px;z-index:999}
+.update {position:fixed;bottom:0;width:100%;min-width:320px;max-width:720px;padding-top:17.5%;background:url('../img/update.jpg') no-repeat 0 100%;background-size:100%;font-size:0;line-height:0;text-indent:-9999px;z-index:999}
 .update .update-btn {display:block;position:absolute;bottom:23%;right:5%;width:30%;height:55%}
 .wrap section img{width:100%}
 
@@ -37,11 +37,10 @@ body {min-width:320px;max-width:720px;-webkit-text-size-adjust:100%;background-c
 .mplayer .player img{position:absolute; top:0; left:0; display:none;}
 
 /* sns */
-.sns {position:relative;width:100%;padding-top:38.125%;font-size:0;line-height:0;text-indent:-9999px;background:url('//image.genie.co.kr/imageg/app/promo_2017/0817/ar_footer_sns.png') no-repeat 0 0;background-size:100% 100%}
-.sns a{display:block;position:absolute;top:51%;width:13%;height:35%;z-index:9999}
-.sns .btn-facebook{left:27.5%}
-.sns .btn-kakao{left:43.5%}
-.sns .btn-twitter{left:59.3%}
+.sns ul{position:absolute; left:50%; top:60%; width:64%; height:32%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
+.sns ul:after{content:""; display:block; clear:both}
+.sns ul li{width:33.3%; height:100%; float:left; text-indent:-9999em}
+.sns ul li a{display: block; height:100%;}
 
 /* motion */
 .ios-blt-scroll {display:block;position:absolute;top:0;right:3%;z-index:9;width:25%;padding-top:25%;background:url('//image.genie.co.kr/imageg/app/promo_2017/0607/ios_blt_scroll.png') no-repeat 0 0;background-size:100% auto;
