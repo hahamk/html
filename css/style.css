@@ -8,58 +8,283 @@ a {-webkit-tap-highlight-color:transparent;text-decoration:none}
 em{font-style:normal;}
 textarea, input{background:#ffffff}
 .hide {display:block;width:0;height:0;overflow:hidden;font-size:0;line-height:0;text-indent:-9999px}
-html,body{ margin:0; padding:0; width:100%; height:100%;}
-body {min-width:320px;max-width:720px;-webkit-text-size-adjust:100%;background-color:#fff;margin:0 auto;line-height:1.5;color:#000}
+ html,body{ margin:0; padding:0; width:100%; height:100%;}
 
  /*공통*/
-.wrap{padding-bottom:17.5%;}
-.wrap section{position:relative;}
-/* update */
-.update {position:fixed;bottom:0;width:100%;min-width:320px;max-width:720px;padding-top:17.5%;background:url('../img/update.jpg') no-repeat 0 100%;background-size:100%;font-size:0;line-height:0;text-indent:-9999px;z-index:999}
-.update .update-btn {display:block;position:absolute;bottom:23%;right:5%;width:30%;height:55%}
-.wrap section img{width:100%}
+.box{ width:100%; height:100%; position:relative; color:#ffffff; font-size:24pt;}
+.vm{position: absolute; left:50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-/* contents */
-.title ul{position:absolute; left:50%; top:40%; width:85%; height:55%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
-.title ul:after{content:""; display:block; clear:both}
-.title ul li{width:50%; height:18%; float:left; margin-bottom:5%; text-indent:-9999em}
-.title ul li a{display: block; height:100%;}
+.tab{position:absolute; left:0; top:412px; width:100%; z-index:100; }
+.tab.f-nav{position:fixed; top:0;}
+.tab ul{width:100%; }
+.tab ul:after{display:block; content:""; clear:both;}
+.tab li{float:left; width:50%; height:70px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/tab_off_bg.png') 0 0; background-size:7px 70px; position:relative;}
+.tab li:first-child.on{background:#62cfef; height:70px;}
+.tab li:first-child.on:after{background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/tab_bg.png') no-repeat 0 0; background-size:20px 142px; content:""; position:absolute; right:-20px; top:0; width:20px; height:70px; z-index:100}
+.tab li:last-child.on:after{background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/tab_bg.png') no-repeat 0 bottom; background-size:20px 142px; content:""; position:absolute; left:-19px; top:0; width:20px; height:70px; z-index:100}
+.tab li:last-child.on{background:#7cd4a3;}
+.tab li a{display:block; font-size:22px; line-height:70px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/tab.png') no-repeat 0 0; background-size:117px 200px; text-indent:-9999em;}
+.tab li:first-child a{background-position:center -29px;}
+.tab li:first-child.on a{background-position:center 26px;}
+.tab li:last-child a{background-position:center -150px;}
+.tab li:last-child.on a{background-position:center -91px;}
 
-.main .img1{position:absolute; width:100%;bottom:0;left:0%;padding-top:75%;background:url('../img/img_main.jpg') no-repeat 0 0;background-size:100%}
+.tab .update{display:none; width:100%; height:67px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/foot.gif') no-repeat center 15px #ffffff;background-size:326px 34px; position:fixed; left:0; bottom:0; z-index:-1; text-indent:-9999em}
+.tab .update a{position:absolute; right:17px; top:14px; width:107px; height:35px}
+.tab.f-nav .update{display:block}
+.contents{width:360px; margin:0 auto; position:relative;}
 
-.chart .img1{position:absolute; width:79.1666%;top:45%;left:4%;padding-top:48.0555555556%;background:url('../img/img_chart.png') no-repeat 0 0;background-size:100%}
+/* 타이틀 */
+.title .contents{height:481px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/top_img.png') no-repeat 0 0;background-size:100%; text-indent: -9999em; }
+ 
+/* 지니어스 소개 */
+.voice{background:#62cfef; }
+.voice .contents{width:269px; height:471px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/intro_tit01.png') no-repeat center 60px;background-size:100%; }
+.voice .img1{position:absolute; left:36px; bottom:35px; width:196px; height:200px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/voice_img.png') no-repeat 0 0; background-size:351px}
+.voice .img2{position:absolute; left:26px; bottom:135px; width:215px; height:85px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/voice_img.png') no-repeat 0 -238px; background-size:351px; z-index:1}
+.voice .img3{position:absolute; left:70px; bottom:17px; width:121px; height:121px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/voice_img.png') no-repeat -227px 0; background-size:351px; z-index:2}
 
-.info .img1{position:absolute;width:37.5%;bottom:0;left:43.9%;height:46.5%;overflow:hidden}
-.info .img1 img {width:100%}
-.info .img2{position:relative;top:-36%}
+.sound{background:#27282d; }
+.sound .contents{width:269px; height:471px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/intro_tit02.png') no-repeat center 60px; background-size:100%; }
+.sound .img1{position:absolute; left:5px; bottom:105px; width:231px; height:90px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/sound_img01.png') no-repeat 0 0;background-size:100%; z-index:3}
+.sound .img2{position:absolute; right:0; bottom:150px; width:194px; height:85px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/sound_img02.png') no-repeat 0 0;background-size:100%; z-index:2}
+.sound .img3{position:absolute; left:45px; bottom:58px; width:191px; height:175px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/sound_img03.png') no-repeat 0 0;background-size:100%; z-index:1}
+.sound .img4{position:absolute; left:23px; bottom:110px; width:226px; height:104px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/sound_img04.png') no-repeat 0 0;background-size:100%;}
 
-.genius a{position:absolute; left:20%; top:30%; width:60%; height:8%; text-indent:-9999em}
+.us{background:#eeeeee; position:relative;overflow:hidden}
+.us .contents{width:269px; height:471px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/intro_tit03.png') no-repeat center 60px; background-size:100%; }
+.us .img1{position:absolute; left:40px; bottom:0; width:202px; height:230px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/us_img01.png') no-repeat 0 0; background-size:100%; }
+.us .img2{position:absolute; left:170px; bottom:165px; width:85px; height:21px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/us_img02.png') no-repeat right top; background-size:200px 62px;}
+.us .img3{position:absolute; left:55px; bottom:126px; width:191px; height:33px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/us_img02.png') no-repeat left -27px; background-size:200px 62px;}
+.us .img4{position:absolute; right:-20px; bottom:0; width:272px; height:121px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/us_img03.png') no-repeat left 0; background-size:100%}
 
-.mplayer .player{position:absolute; left:17.2%; top:35.9%; width:65.6%; display: inline-block;}
-.mplayer .player img{position:absolute; top:0; left:0; display:none;}
+.sns{height:181px; width:100%; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/sns.png') no-repeat center 25px #05b5e5; background-size:260px 72px; text-indent:-9999em; }
+.sns ul{margin:0 auto; width:158px; padding-top:52px; }
+.sns ul li{float:left; margin-left:13px; width:44px; height:44px; }
+.sns ul li:first-child{margin-left:0; }
 
-/* sns */
-.sns ul{position:absolute; left:50%; top:60%; width:64%; height:32%; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
-.sns ul:after{content:""; display:block; clear:both}
-.sns ul li{width:33.3%; height:100%; float:left; text-indent:-9999em}
-.sns ul li a{display: block; height:100%;}
+.slick-dots{height:30px !important;}
+.use_guide01 .slick-dots li button, .use_guide02 .slick-dots li button{background:#fff !important}
+.slick-track{height:272px !important;}
+
+/* 사용 가이드 */
+.swiper-wrapper li{position:relative;}
+.swiper-wrapper .slick-arrow{display:none !important;}
+.use_guide01{background:#7cd4a3; height:470px;}
+.use_guide01 h2{background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/tit_use01.gif') no-repeat center 58px; background-size:200px 68px; text-indent:-9999em; height:125px; }
+.use_guide01 ul{width:300px; height:272px; margin:0 auto; }
+.use_guide01 li img{width:300px; height:272px;}
+.use_guide01 li .mask{position:absolute; left:59px; top:10px; width:180px; height:50px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/mask01.png') 0 0; background-size:179px 50px;}
+.use_guide01 li .img01{left:135px; top:95px; position:absolute; width:38px; height:50px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use01_ico01.png') 0 0 no-repeat; background-size:695px 50px;
+-webkit-animation: play 1s steps(18) infinite;
+-moz-animation: play 1s steps(18) infinite;
+-ms-animation: play 1s steps(18) infinite;
+-o-animation: play 1s steps(18) infinite;
+animation: play 1s steps(18) infinite;
+}
+@-webkit-keyframes play {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:160px}
+}
+@-moz-keyframes play {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:160px}
+}
+@-ms-keyframes play {
+    from {background-position: 0px; }
+     to {background-position: -695px; left:160px}
+}
+@-o-keyframes play {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:160px}
+}
+@keyframes play {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:160px}
+}
+
+.use_guide01 li .img02{left:130px; top:95px; position:absolute; width:45px; height:45px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use01_icon02.png') 0 0 no-repeat; background-size:810px 45px;
+-webkit-animation: play2 1s steps(18) infinite;
+-moz-animation: play2 1s steps(18) infinite;
+-ms-animation: play2 1s steps(18) infinite;
+-o-animation: play2 1s steps(18) infinite;
+animation: play2 1s steps(18) infinite;
+}
+@-webkit-keyframes play2 {
+   from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@-moz-keyframes play2 {
+  from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@-ms-keyframes play2 {
+  from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@-o-keyframes play2 {
+ from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@keyframes play2 {
+ from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+
+.use_guide01 li .img03{left:59px; bottom:115px; position:absolute; width:180px; height:143px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use01_icon03.png') 0 0 no-repeat #f5f7fa; background-size:180px 310px; z-index:-1;
+-webkit-animation: play3 5s infinite;
+-moz-animation: play3 5s infinite;
+-ms-animation: play3 5s infinite;
+-o-animation: play3 5s infinite;
+animation: play3 5s infinite;
+}
+
+@-webkit-keyframes play3 {
+   0% {background-position: left top;  }
+   20% {background-position: left top;  }
+   50% {background-position: left bottom;  }
+	80% {background-position: left bottom;  }
+	100% {background-position: left top; }
+}
+@-moz-keyframes play3 {
+    0% {background-position: left top;  }
+   20% {background-position: left top;  }
+   50% {background-position: left bottom;  }
+	80% {background-position: left bottom;  }
+	100% {background-position: left top; }
+}
+@-ms-keyframes play3 {
+     0% {background-position: left top;  }
+   20% {background-position: left top;  }
+   50% {background-position: left bottom;  }
+	80% {background-position: left bottom;  }
+	100% {background-position: left top; }
+}
+@-o-keyframes play3 { 
+  0% {background-position: left top;  }
+   20% {background-position: left top;  }
+   50% {background-position: left bottom;  }
+	80% {background-position: left bottom;  }
+	100% {background-position: left top; }
+}
+@keyframes play3 {
+  0% {background-position: left top;  }
+   20% {background-position: left top;  }
+   50% {background-position: left bottom;  }
+	80% {background-position: left bottom;  }
+	100% {background-position: left top; }
+}
+
+/*두번째*/
+.use_guide02{background:#9dbae9; height:470px;}
+.use_guide02 h2{background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/tit_use02.gif') no-repeat center 58px; background-size:221px 68px; text-indent:-9999em; height:125px; }
+.use_guide02 ul{width:310px; height:272px; margin:0 auto; }
+.use_guide02 li img{width:310px; height:272px;}
+.use_guide02 li .mask{position:absolute; left:59px; top:14px; width:190px; height:50px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/mask02.png') 0 0; background-size:179px 50px;}
+
+.use_guide02 li .img01{left:135px; top:95px; position:absolute; width:38px; height:50px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use01_ico01.png') 0 0 no-repeat; background-size:695px 50px;
+-webkit-animation: play4 1s steps(18) infinite;
+-moz-animation: play4 1s steps(18) infinite;
+-ms-animation: play4 1s steps(18) infinite;
+-o-animation: play4 1s steps(18) infinite;
+animation: play4 1s steps(18) infinite;
+}
+@-webkit-keyframes play4 {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:110px}
+}
+@-moz-keyframes play4 {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:110px}
+}
+@-ms-keyframes play4 {
+    from {background-position: 0px; }
+     to {background-position: -695px; left:110px}
+}
+@-o-keyframes play4 {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:110px}
+}
+@keyframes play4 {
+   from {background-position: 0px; }
+     to {background-position: -695px; left:110px}
+}
+
+
+.use_guide02 li .img02{left:130px; top:95px; position:absolute; width:45px; height:45px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use02_icon02.png') 0 0 no-repeat; background-size:810px 45px;
+-webkit-animation: play2 1s steps(18) infinite;
+-moz-animation: play2 1s steps(18) infinite;
+-ms-animation: play2 1s steps(18) infinite;
+-o-animation: play2 1s steps(18) infinite;
+animation: play2 1s steps(18) infinite;
+}
+@-webkit-keyframes play2 {
+   from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@-moz-keyframes play2 {
+  from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@-ms-keyframes play2 {
+  from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@-o-keyframes play2 {
+ from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+@keyframes play2 {
+ from {background-position: 0px; }
+     to {background-position: -810px;}
+}
+
+.use_guide02 li .img03{left:64px; bottom:115px; position:absolute; width:180px; height:143px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use02_icon03.png') 0 0 no-repeat #f5f7fa; background-size:180px 333px; z-index:-1;
+-webkit-animation: play3 8s infinite;
+-moz-animation: play3 8s infinite;
+-ms-animation: play3 8s infinite;
+-o-animation: play3 8s infinite;
+animation: play3 8s infinite;
+}
+
+
+/*세번째*/
+.use_guide03{background:#eeeeee; height:470px;}
+.use_guide03 h2{background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/tit_use03.gif') no-repeat center 58px; background-size:287px 68px; text-indent:-9999em; height:125px; }
+.use_guide03 ul{width:315px; height:272px; margin:0 auto; }
+.use_guide03 li img{width:315px; height:272px;}
+.use_guide03 li .mask{position:absolute; left:62px; top:7px; width:190px; height:50px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/mask03.png') 0 0; background-size:179px 50px;}
+.use_guide03 li .img01{left:66px; bottom:94px; position:absolute; width:180px; height:143px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use03_icon01.png') 0 0 no-repeat #f5f7fa; background-size:180px 264px; z-index:-1;
+-webkit-animation: play3 5s infinite;
+-moz-animation: play3 5s infinite;
+-ms-animation: play3 5s infinite;
+-o-animation: play3 5s infinite;
+animation: play3 5s infinite;
+}
+.use_guide03 li .img02{left:66px; bottom:94px; position:absolute; width:180px; height:143px; background:url('//image.genie.co.kr/imageg/app/promo_2017/1124/use03_icon02.png') 0 0 no-repeat #f5f7fa; background-size:180px 308px; z-index:-1;
+-webkit-animation: play3 5s infinite;
+-moz-animation: play3 5s infinite;
+-ms-animation: play3 5s infinite;
+-o-animation: play3 5s infinite;
+animation: play3 5s infinite;
+}
+.use_guide03 .swiper-pagination-bullet{background:#434354 !important}
 
 /* motion */
-.ios-blt-scroll {display:block;position:absolute;top:0;right:3%;z-index:9;width:25%;padding-top:25%;background:url('//image.genie.co.kr/imageg/app/promo_2017/0607/ios_blt_scroll.png') no-repeat 0 0;background-size:100% auto;
+.ios-blt-scroll {display:block;position:absolute;top:0;left:43.5%;z-index:9;width:25%;padding-top:25%;background:url('//image.genie.co.kr/imageg/app/promo_2017/0607/ios_blt_scroll.png') no-repeat 0 0;background-size:100% auto;
 opacity:0;font-size:0;line-height:0;text-indent:-9999px;-webkit-animation:mainScroll 3s;animation:mainScroll 3s}
-
 @-webkit-keyframes mainScroll {
 	from {opacity:0}
-	20% {opacity:0;top:80%}
+	20% {opacity:0;top:75%}
 	30% {opacity:1}
-	75% {opacity:1;top:80%}
+  75% {opacity:1;top:75%}
 	85% {opacity:0}
 }
 @keyframes mainScroll {
 	from {opacity:0}
-	20% {opacity:0;top:80%}
+	20% {opacity:0;top:75%}
 	30% {opacity:1}
-  75% {opacity:1;top:80%}
+  75% {opacity:1;top:75%}
 	85% {opacity:0}
 }
 
@@ -93,60 +318,64 @@ opacity:0;font-size:0;line-height:0;text-indent:-9999px;-webkit-animation:mainSc
    -webkit-transition: opacity .25s ease-in-out;
 }
 
-.playlistIn {
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-  -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
-  -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease;
-  transition: transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1
+.fadeIn-delay {
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	-webkit-transition-delay: .6s;
+	transition-delay: .6s;
 }
 
-.playlistOut {
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-  -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
-  -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
-}
-.playlistOut {
-  transition: transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
-  -webkit-transform: translate(0, -10%);
-  -moz-transform: translate(0, -10%);
-  -ms-transform: translate(0, -10%);
-  -o-transform: translate(0, -10%);
-  transform: translate(0, -10%);
-  opacity: 0
+.fadeIn-delay3 {
+	opacity: 1;
+	transition: opacity .7s ease-in-out;
+	-moz-transition: opacity .7s ease-in-out;
+	-webkit-transition: opacity .7s ease-in-out;
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
 }
 
-.fromBottomIn {
-  transition: transform 2s ease, opacity 1s ease;
-  transition: transform 2s ease, opacity 1s ease, -webkit-transform 2s ease, -moz-transform 2s ease, -o-transform 2s ease;
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
-	-webkit-transition-delay: .3s;
-	transition-delay: .3s;
+.fadeIn-delay4 {
+	opacity: 1;
+	transition: opacity .7s ease-in-out;
+	-moz-transition: opacity .7s ease-in-out;
+	-webkit-transition: opacity .7s ease-in-out;
+	-webkit-transition-delay: 1..4s;
+	transition-delay: 1.4s;
 }
-.fromBottomOut{
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-  -moz-transition: transform 1s ease, opacity 1s ease, -moz-transform 1s ease;
-  -o-transition: transform 1s ease, opacity 1s ease, -o-transform 1s ease
+
+.fromLeftIn2{
+transition: transform 1s ease,opacity 1s ease;
+    transition: transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    opacity: 1;
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
 }
-.fromBottomOut {
-  transition: transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease, -moz-transform 1s ease, -o-transform 1s ease;
-  -webkit-transform: translate(0, 15%);
-  -moz-transform: translate(0, 15%);
-  -ms-transform: translate(0, 15%);
-  -o-transform: translate(0, 15%);
-  transform: translate(0, 15%);
-  opacity: 0
+
+
+.fromBottomIn2 {
+    transition: transform 1s ease,opacity 1s ease;
+    transition: transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    opacity: 1;
+	-webkit-transition-delay: .6s;
+	transition-delay: .6s;
 }
+
+.fromRightIn {
+	-webkit-transition-delay: 1s !important;
+	transition-delay: 1s !important;
+}
+
+
+.fromTopIn{-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-moz-transition:transform 1s ease,opacity 1s ease,-moz-transform 1s ease;-o-transition:transform 1s ease,opacity 1s ease,-o-transform 1s ease;transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);opacity:1}.fromBottomIn,.fromTopOut{-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-moz-transition:transform 1s ease,opacity 1s ease,-moz-transform 1s ease;-o-transition:transform 1s ease,opacity 1s ease,-o-transform 1s ease}.fromTopOut{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(0,-10px);-moz-transform:translate(0,-10px);-ms-transform:translate(0,-10px);-o-transform:translate(0,-10px);transform:translate(0,-10px);opacity:0}.fromBottomIn{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);opacity:1}.fromBottomOut,.fromLeftIn{-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-moz-transition:transform 1s ease,opacity 1s ease,-moz-transform 1s ease;-o-transition:transform 1s ease,opacity 1s ease,-o-transform 1s ease}.fromBottomOut{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(0,10px);-moz-transform:translate(0,10px);-ms-transform:translate(0,10px);-o-transform:translate(0,10px);transform:translate(0,10px);opacity:0}.fromLeftIn{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);opacity:1}.fromLeftOut,.fromRightIn{-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-moz-transition:transform 1s ease,opacity 1s ease,-moz-transform 1s ease;-o-transition:transform 1s ease,opacity 1s ease,-o-transform 1s ease}.fromLeftOut{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(-10px,0);-moz-transform:translate(-10px,0);-ms-transform:translate(-10px,0);-o-transform:translate(-10px,0);transform:translate(-10px,0);opacity:0}.fromRightIn{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);opacity:1}.fromRightOut,.scaleUpIn{-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-moz-transition:transform 1s ease,opacity 1s ease,-moz-transform 1s ease;-o-transition:transform 1s ease,opacity 1s ease,-o-transform 1s ease}.fromRightOut{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:translate(10px,0);-moz-transform:translate(10px,0);-ms-transform:translate(10px,0);-o-transform:translate(10px,0);transform:translate(10px,0);opacity:0}.scaleUpIn{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:scale(1,1);-moz-transform:scale(1,1);-ms-transform:scale(1,1);-o-transform:scale(1,1);transform:scale(1,1);opacity:1}.scaleDownIn,.scaleUpOut{-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-moz-transition:transform 1s ease,opacity 1s ease,-moz-transform 1s ease;-o-transition:transform 1s ease,opacity 1s ease,-o-transform 1s ease}.scaleUpOut{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:scale(1.3,1.3);-moz-transform:scale(1.3,1.3);-ms-transform:scale(1.3,1.3);-o-transform:scale(1.3,1.3);transform:scale(1.3,1.3);opacity:0}.scaleDownIn{transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:scale(1,1);-moz-transform:scale(1,1);-ms-transform:scale(1,1);-o-transform:scale(1,1);transform:scale(1,1);opacity:1}.scaleDownOut{-webkit-transition:opacity 1s ease,-webkit-transform 1s ease;-moz-transition:transform 1s ease,opacity 1s ease,-moz-transform 1s ease;-o-transition:transform 1s ease,opacity 1s ease,-o-transform 1s ease;transition:transform 1s ease,opacity 1s ease;transition:transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;-webkit-transform:scale(.7,.7);-moz-transform:scale(.7,.7);-ms-transform:scale(.7,.7);-o-transform:scale(.7,.7);transform:scale(.7,.7);opacity:0}
