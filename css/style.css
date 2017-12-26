@@ -51,8 +51,8 @@ button::-moz-focus-inner {padding:0;border:0}
 /* 반짝반짝*/
 @keyframes blink { 
 	0% {opacity: 0;}
-	40% {opacity: 1;}
-	80% {opacity: 0; }
+	50% {opacity: 1;}
+	90% {opacity: 0; }
 	100% {opacity: 0; }
 }
 .star li{position:absolute; top:5%; left:12%; width:19px; height:16px}
@@ -67,15 +67,13 @@ button::-moz-focus-inner {padding:0;border:0}
 .star li:nth-child(5){top:16%; left:80%; }
 .star li:nth-child(6) em{ animation: blink 2.5s infinite; animation-delay: 2s; }
 .star li:nth-child(6){top:34%; left:94%; }
-.star li:nth-child(7) em{ animation: blink 2s infinite; animation-delay: 0.9s;  }
-.star li:nth-child(7){top:69%; left:88%;}
+.star li:nth-child(7) em{ animation: blink 2.2s infinite; animation-delay: 0.3s;  }
+.star li:nth-child(7){top:50%; left:76%;}
+.star li:nth-child(8) em{ animation: blink 2s infinite; animation-delay: 0.9s;  }
+.star li:nth-child(8){top:69%; left:88%;}
 .star li em{background-position:-22px 0; width:19px; height:16px; display:block; opacity:0;}
 
 section h2{color:#27282d; font-size:25px; text-align:center; padding:35px 0 10px; line-height:30px; font-family:NanumSquareB}
-
-/* 나의뮤직운세 */
-.my_con01{background:#fff5a1; padding:0 18px}
-.my_con01 .mymusic{border:3px solid #1a1b20; background:#fff; height:312px; border-radius:20px;}
 
 /* swiper */
 .swiper-container{position:relative;overflow:hidden; z-index:1}
@@ -93,3 +91,7 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:35px 0 10px
 .swiper-pagination-bullet {width:8px;height:8px;display:inline-block;margin:0 4px; border:1px solid #000000; border-radius:50%;opacity:1}
 .swiper-pagination-clickable .swiper-pagination-bullet {cursor:pointer; transition:all .4s;}
 .swiper-pagination-bullet-active {width:16px; background:#000;opacity:1; border-radius:20px}
+
+/* 나의뮤직운세 */
+.my_con01{background:#fff5a1; padding:0 18px}
+.my_con01 .mymusic{border:3px solid #1a1b20; background:#fff; height:312px; border-radius:20px;}
