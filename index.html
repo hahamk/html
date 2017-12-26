@@ -7,6 +7,9 @@
 	<meta name="author" content="GENIE SERVICE UX TEAM" />
 	<meta name="description" content="KT 디지털 음악 어플리케이션 사이트" />
 	<meta name="keywords" content="지니,지니뮤직, 이어,올레 뮤직,올레,KT,KT MUSIC,음악 사이트,올 한해, 나는 어떤 감성을 지녔는가?,연말이벤트, 나의 뮤직리포트, 지니이벤트" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -14,28 +17,59 @@
 <section class="mainvisual">
 	<h1><img src="img/mainvisual.png" alt="지난해를 추억하며 2018년을 점쳐보는 나의 뮤직 운세" /></h1>
 	<ul class="star">
-		<li class="ico"><em></em></li>
-		<li class="ico"><em></em></li>
-		<li class="ico"><em></em></li>
-		<li class="ico"><em></em></li>
-		<li class="ico"><em></em></li>
-		<li class="ico"><em></em></li>
-		<li class="ico"><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>
+		<li><em></em></li>
 	</ul>
-	<img src="img/tab01.gif" alt="" />
 	<ul class="tab">
-		<li><a href="javascript:///">나의 뮤직 운세</a></li>
+		<li class="on"><a href="javascript:///">나의 뮤직 운세</a></li>
 		<li><a href="javascript:///">전체회원 뮤직운세</a></li>
 	</ul>
 </section>
 
 <section class="my_con01">
 	<h2>가만보쟈~ genie***님!<br />2017년에 이 곡 많이 들으셨죠?</h2>
+	<div class="swiper-container mymusic">		
+		<ul class="swiper-wrapper">
+			<!-- Slides -->
+			<li class="swiper-slide">가나다</li>
+			<li class="swiper-slide">라마바</li>
+		</ul>    
+	</div>
+	<div class="swiper-pagination"></div>   
 </section>
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<section class="my_con02">
+	<h2>가만보쟈~ genie***님!<br />2017년에 이 곡 많이 들으셨죠?</h2>
+	<div class="swiper-container mymusic2">		
+		<ul class="swiper-wrapper">
+			<!-- Slides -->
+			<li class="swiper-slide">가나다</li>
+			<li class="swiper-slide">라마바</li>
+		</ul>    
+	</div>
+	<div class="swiper-pagination"></div>   
+</section>
+
+<script type="text/javascript">
+$(function() {
+	/* swiper */
+	var swiper1 = new Swiper('.mymusic', {
+		pagination: '.my_con01 .swiper-pagination',
+		paginationClickable: true,
+		loop: true
+	});
+
+	var swiper2 = new Swiper('.mymusic2', {
+		pagination: '.my_con02 .swiper-pagination',
+		paginationClickable: true,
+	});
+});
+</script>
 
 </body>
 </html>
