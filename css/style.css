@@ -49,7 +49,7 @@ button{background:#27282d; border-radius:25px; font-size:16px; line-height:45px;
 .mainvisual .tab li.on{background:#87d6ff}
 .mainvisual .tab li.on:before{content:""; width:14px; height:14px; background:#87d6ff; left:45%; bottom:-11px; position:absolute; border-left:3px solid #000; border-bottom:3px solid #000; transform: rotate(-46deg);}
 .mainvisual .tab li.on a{color:#000}
-.mainvisual .tab.top-nav{position:fixed; top:0; left:0;}
+.mainvisual .tab.top-nav{position:fixed; top:0; left:0;z-index:10}
 
 /* 반짝반짝*/
 @keyframes blink { 
