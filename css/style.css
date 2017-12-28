@@ -25,18 +25,18 @@ button::-moz-focus-inner {padding:0;border:0}
 /*	font 설정	*/
 @font-face {
  font-family: 'NanumSquare';
- src: url(../font/NanumSquareR.eot);
- src: url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
-      url(../font/NanumSquareR.woff) format('woff'),
-      url(../font/NanumSquareR.ttf) format('truetype');
+ src: url(../font/NanumSquareRoundR.eot);
+ src: url(../font/NanumSquareRoundR.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquareRoundR.woff) format('woff'),
+      url(../font/NanumSquareRoundR.ttf) format('truetype');
 }
 
 @font-face {
  font-family: 'NanumSquareB';
- src: url(../font/NanumSquareB.eot);
- src: url(../font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
-      url(../font/NanumSquareB.woff) format('woff'),
-      url(../font/NanumSquareB.ttf) format('truetype');
+ src: url(../font/NanumSquareRoundB.eot);
+ src: url(../font/NanumSquareRoundB.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquareRoundB.woff) format('woff'),
+      url(../font/NanumSquareRoundB.ttf) format('truetype');
 }
 
 /* main visual */
@@ -132,7 +132,7 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 
 .best_artist li strong{display:block; padding:50px 0 60px; color:#ffffff; font-size:17px; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none; line-height: 24px;}
 .best_artist li.swiper-slide-active strong{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 1s, ease 1.3s;transition:opacity 1s, ease 1.3s;}
-.best_artist li strong em{display:inline-block; color:#fff5a1; line-height:24px; max-width: 172px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; }
+.best_artist li strong em{display:inline-block; color:#fff5a1; line-height:19px; max-width: 172px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; }
 .artist_list .swiper-pagination{position:absolute; top:340px;}
 .best_artist li .basic_btn{position:absolute; left:0px; bottom:0px; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
 .best_artist li.swiper-slide-active .basic_btn{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 1s, ease 1s;transition:opacity 1s, ease 1s;}
@@ -140,3 +140,5 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 /* season */
 .season{background:#403967; padding:40px 18px; position:relative;}
 .season h2{color:#fff}
+.season .season_txt{color:#ffffff; font-size:17px; text-align:center; }
+.season .season_txt em{color:#fff391}
