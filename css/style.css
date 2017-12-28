@@ -87,17 +87,14 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 10px; l
 .swiper-container-multirow > .swiper-wrapper {-webkit-box-lines:multiple;-moz-box-lines:multiple;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap}
 .swiper-container-free-mode > .swiper-wrapper {-webkit-transition-timing-functvion:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 auto}
 .swiper-wp8-horizontal {-ms-touch-action:pan-y;touch-action:pan-y}
-.swiper-button-prev, .swiper-button-next {position:absolute;top:50%;width:11.1111111111%;padding-top:16%;margin-top:-8%;z-index:10;cursor:pointer;background:url('//image.genie.co.kr/imageg/app/promo_2017/0214/btn_arrow.png') no-repeat 0 0;background-size:100% 200%}
-.swiper-button-next {right:0;background-position:0 100%}
 .swiper-slide {-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;position:relative;top:0;width:100%; }
 .swiper-pagination{width:100%;text-align:center;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms;-webkit-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);z-index:10;line-height:1; padding:10px 0 20px}
 .swiper-pagination-bullet {width:8px;height:8px;display:inline-block;margin:0 4px; border:1px solid #000000; border-radius:50%;opacity:1}
 .swiper-pagination-clickable .swiper-pagination-bullet {cursor:pointer; transition:all .4s;}
 .swiper-pagination-bullet-active {width:16px; background:#000;opacity:1; border-radius:20px}
 
-/* 나의뮤직운세 */
-section{padding:30px 18px}
-.music_list{background:#fff5a1; }
+/* top10 */
+.music_list{background:#fff5a1; padding:30px 18px}
 .music_list .mymusic{border:3px solid #1a1b20; background:#fff; border-radius:20px; padding:8px 0}
 .top10{padding-left:35px; }
 .top10 li{position:relative;height:60px;border-top:1px solid #e9e9e9; padding:0 60px 0 56px;}
@@ -114,5 +111,25 @@ section{padding:30px 18px}
 .music_list .btnarea li{width:50%; float:left; padding-left:4px; box-sizing: border-box;}
 .music_list .btnarea li:first-child{width:50%; float:left; padding:0 4px 0 0;}
 .music_list .btnarea li button em{padding-right:20px; position:relative;}
-.music_list .btnarea li button em:after{background-position:-48px 0; width:13px; height:14px; position:absolute; right:0; top:1px; content:""; }
+.music_list .btnarea li button em:after{background-position:-48px 0; width:13px; height:15px; position:absolute; right:0; top:1px; content:""; }
 .music_list .txt{font-size:13px; text-align:center; padding-top:25px}
+
+/* artist */
+.artist_list{background:#db4a37; padding:30px 0; position:relative;}
+.artist_list h2{color:#fff}
+.artist{padding-top:10px}
+.artist li{text-align:center; }
+.artist li .area{width:230px; margin:0 auto; }
+.artist li .thum .win{position:absolute; left:-15px; top:115px; width:210px; height:62px; background:url('../img/ribbon.png') no-repeat 0 0; background-size:100%; text-indent:-9999em; font-weight:normal; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
+.artist li.swiper-slide-active .win{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 0.5s, ease 0.3s;transition:opacity 0.5s, ease 0.3s;}
+.artist li .thum{width:170px; display:block; margin:0 30px; position:relative;}
+.artist li .thum img{width:164px; height:164px; border: 3px solid #1a1b20; border-radius:50%; }
+.artist li .thum:after{position:absolute; left:0px; top:0px; border-radius:50%; width:100%; height:100%; content:""; background:rgba(0,0,0,0.4); }
+.artist li.swiper-slide-active .thum:after{background:rgba(0,0,0,0);}
+.artist li .thum .num{z-index: 1; width:54px; line-height:54px; background:#fff5a1; font-size:18px; border: 3px solid #1a1b20; border-radius:50%; position:absolute; left:-12px; top:-10px; text-align:center; font-family: NanumSquareB; display:block; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
+.artist li.swiper-slide-active .num{top:0; opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 0.5s, top 0.3s ease;transition:opacity 0.5s, top 0.3s ease;}
+
+.artist li strong{display:block; padding-top:50px; color:#ffffff; font-size:17px; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
+.artist li.swiper-slide-active strong{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 1s, ease 1.3s;transition:opacity 1s, ease 1.3s;}
+.artist li strong em{color:#fff5a1}
+.artist_list .swiper-pagination{position:absolute; top:290px;}

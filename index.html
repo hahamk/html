@@ -153,14 +153,42 @@
 	</ul>
 	<p class="txt">마이앨범에 저장 버튼을 선택하시면,<br />최대 100곡까지 확인 가능합니다. </p>
 </section>
+<!--// TOP10 로그인 -->
 
+<!-- 아티스트 -->
 <section class="artist_list">
-	<h2>가만보쟈~ genie***님!<br />2017년에 이 곡 많이 들으셨죠?</h2>
+	<h2>덕력을 자극한 아티스트는<br />이분들 아닙니까?</h2>
 	<div class="swiper-container artist">		
 		<ul class="swiper-wrapper">
 			<!-- Slides -->
-			<li class="swiper-slide">가나다</li>
-			<li class="swiper-slide">라마바</li>
+			<li class="swiper-slide">
+				<div class="area">
+					<span class="thum">
+						<em class="num">1위</em>
+						<img src="//image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/220/847/80220847_13_600x600.JPG" alt="">
+						<span class="win">완전소듕!!</span>
+					</span>
+					<strong>오호라!! <em>Wanna One (워너원)~!!!</em><br />genie***님이랑 케미가 좋네!!!<br />새해에도 격하게 아끼면 좋을듯!!</strong>
+				</div>
+			</li>
+			<li class="swiper-slide">
+				<div class="area">
+					<span class="thum">
+						<em class="num">2위</em>
+						<img src="//image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/221/635/80221635_9_600x600.JPG" alt="">
+					</span>
+					<strong>오호라!! <em>Wanna One (워너원)~!!!</em><br />genie***님이랑 케미가 좋네!!!<br />새해에도 격하게 아끼면 좋을듯!!</strong>
+				</div>
+			</li>
+			<li class="swiper-slide">
+				<div class="area">
+					<span class="thum">
+						<em class="num">3위</em>
+						<img src="//image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/221/635/80221635_9_600x600.JPG" alt="">
+					</span>
+					<strong>오호라!! <em>Wanna One (워너원)~!!!</em><br />genie***님이랑 케미가 좋네!!!<br />새해에도 격하게 아끼면 좋을듯!!</strong>
+				</div>
+			</li>
 		</ul>    
 	</div>
 	<div class="swiper-pagination"></div>   
@@ -178,6 +206,9 @@ $(function() {
 	var swiper2 = new Swiper('.artist', {
 		pagination: '.artist_list .swiper-pagination',
 		paginationClickable: true,
+		slidesPerView: 1.8,
+		centeredSlides: true,
+		 grabCursor: true,
 	});
 
 	//tab scroll
