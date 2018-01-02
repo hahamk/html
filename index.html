@@ -161,7 +161,7 @@
 	<h2>2017년 genie***님의<br />덕력을 자극한 아티스트는<br />이분들 아닙니까?</h2>
 	<div class="before_login">
 		어서와 지니는 처음이지?^^<br />지니는 2018년도 회원님의 활동을<br />응원합니다! 완!전!
-		<div class="btnarea"><button class="basic_btn"><em>전체재생</em></div>
+		<div class="btnarea"><button class="basic_btn"><em>TOP100 재생</em></div>
 	</div>
 </section>
 
@@ -210,37 +210,294 @@
 <!-- 계절별 -->
 <section class="season">
 	<h2>계절별로 애정했던 곡을<br />족집게처럼 뽑아 봤어요~</h2>
-<section>
+	<p class="season_txt">genie***님!<br />지니와 <em>한 계절</em>을 함께 하셨네요!</p>
+		<ul class="season-list">
+			<li class="season-list">
+				<p class="season-cover spring">봄</p>
+				<p class="season-img-artist"><img src="//image.genie.co.kr/imageg/app/promo_2016/1212/artist-img.png" alt="아티스트이미지"></p>
+				<!-- 내용이 없을경우 <p class="season-img-artist">와 교체
+				<span class="null_txt">헛..봄에는<br>함께 하지 못했네요..<br>무슨 일이라도..</span>
+				<!-- 내용 없을경우 season-txt 삭제-->
+				<p class="season-txt">
+					<strong>이럴거면 그러지 말지</strong>
+					<span>백아연</span>
+				</p>
+				<!-- // 내용 없을경우 season-txt 삭제 -->
+			</li>
+			<li class="season-list">
+				<p class="season-cover summer">여름</p>
+				<p class="season-img-artist"><img src="//image.genie.co.kr/imageg/app/promo_2016/1212/artist-img.png" alt="아티스트이미지"></p>
+				<!-- 내용이 없을경우 <p class="season-img-artist">와 교체
+				<span class="null_txt">헛..여름에는<br>함께 하지 못했네요..<br>무슨 일이라도..</span>
+				<!-- 내용 없을경우 season-txt 삭제-->
+				<p class="season-txt">
+					<strong>우주를 줄게 우주를 줄게 우주를 줄게 우주를 줄게 우주를 줄게</strong>
+					<span>볼빨간 사춘기 볼빨간 사춘기 볼빨간 사춘기</span>
+				</p>
+				<!-- // 내용 없을경우 season-txt 삭제 -->
+			</li>
+			<li class="season-list">
+				<p class="season-cover fall">가을</p>
+				<p class="season-img-artist"><img src="//image.genie.co.kr/imageg/app/promo_2016/1212/artist-img.png" alt="아티스트이미지"></p>
+				<!-- 내용이 없을경우 <p class="season-img-artist">와 교체
+				<span class="null_txt">헛..가을에는<br>함께 하지 못했네요..<br>무슨 일이라도..</span>
+				</p> -->
+				<!-- 내용 없을경우 season-txt 삭제-->
+				<p class="season-txt">
+					<strong>이럴거면 그러지 말지</strong>
+					<span>백아연</span>
+				</p>
+				<!-- // 내용 없을경우 season-txt 삭제 -->
+			</li>
+			<li class="season-list">
+				<div class="season-album">
+					<p class="season-cover winter">겨울</p>
+					<!-- 내용 없을 경우 -->
+					<p class="season-img-artist">
+						<span class="null_txt">헛..겨울에는<br>함께 하지 못했네요..<br>무슨 일이라도..</span>
+					</p>
+					<!-- // 내용 없을 경우 -->
+				</div>
+			</li>
+		</ul>
+</section>
 
-<script type="text/javascript">
-$(function() {
-	//swiper
-	var swiper1 = new Swiper('.mymusic', {
-		pagination: '.music_list .swiper-pagination',
-		paginationClickable: true,
-		loop: true
-	});
+<!-- 장르별 비로그인 -->
+<section class="genre_area">
+	<h2>2017년 주로 감상한<br />음악장르는 이거구만!</h2>
+	<div class="before_login">
+		어서와 지니는 처음이지?^^<br />그렇다면, 회원님의 음악성향을<br />마이스타일에 등록해 보세요!
+		<div class="btnarea"><button class="basic_btn">마이스타일 등록</div>
+	</div>
+</section>
 
-	var swiper2 = new Swiper('.best_artist', {
-		pagination: '.artist_list .swiper-pagination',
-		paginationClickable: true,
-		slidesPerView: 1.8,
-		centeredSlides: true,
-		 grabCursor: true,
-	});
+<!-- 장르별 -->
+<section class="genre_area">
+	<h2>2017년 주로 감상한<br />음악장르는 이거구만!</h2>
+	<p class="genre_txt">genie***님은<br /><em>클래식</em> 마니아네!! 맞쥬맞쥬??</p>
 
-	//tab scroll
-	var nav = $('.tab');
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 500) {
-			nav.addClass("top-nav");
-		} else {
-			nav.removeClass("top-nav");
-		}
-	});
+	<div class="genre">
+		<ul>
+			<li class="genre-list-first">
+				<div class="circle-box">
+					<p class="circle-title">클래식</p>
+					<!-- 그래프, 색상은 장르별 색상 적용 -->
+					<div class="pie" data-percent="80" style="color:#ff7768;">
+						<div class="left">
+							<span style="background-color:#ff7768;"></span>
+						</div> 
+						<div class="right">
+							<span style="background-color:#ff7768;"></span>
+						</div>
+					</div>
+					<!-- // 그래프 -->
+				</div>
+			</li>
+			<li class="genre-list-second">
+				<div class="circle-box">
+					<p class="circle-title">발라드</p>
+					<!-- 그래프, 색상은 장르별 색상 적용 -->
+					<div class="pie" data-percent="24" style="color:#f1af5f;">
+						<div class="left">
+							<span style="background-color:#f1af5f;"></span>
+						</div>
+						<div class="right">
+							<span style="background-color:#f1af5f;"></span>
+						</div>
+					</div>
+					<!-- // 그래프 -->
+				</div>
+			</li>
+			<li class="genre-list-third">
+				<div class="circle-box">
+					<p class="circle-title">댄스</p>
+					<!-- 그래프, 색상은 장르별 색상 적용 -->
+					<div class="pie" data-percent="75" style="color:#a5cbf3;">
+						<div class="left">
+							<span style="background-color:#a5cbf3;"></span>
+						</div>
+						<div class="right">
+							<span style="background-color:#a5cbf3;"></span>
+						</div>
+					</div>
+					<!-- // 그래프 -->
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="genre-info">마이 > 마이스타일 맞춤추천 버튼을 선택하시면<br />선호장르의 추천앨범을 확인하실 수 있습니다.</div>
+</section>
+<!--// 장르별 -->
 
-});
-</script>
+<!-- 발자국 -->
+<section class="vestige_area">
+	<h2>2017년 지니에<br />뭘 좋다고 남겼는지 볼까요!?</h2>
+
+			<div class="vestige">
+				<ul class="boxs">
+					<li class="vestige-menu1 active" rel="box1"><span>1,234</span></li>
+					<li class="vestige-menu2" rel="box2"><span>800</span></li>
+				</ul>
+				<div class="vestige-container">
+					<div id="box1" class="vestige-content vestige-data"><!-- 내용이 없을경우 class에 vestige-null 추가 -->
+						<!-- 내용이 없을경우 아래내용 삭제 -->
+						<dl>
+							<dt>곡</dt>
+							<dd>123회</dd>
+							<dt>앨범</dt>
+							<dd>234회</dd>
+							<dt>아티스트</dt>
+							<dd>34회</dd>
+							<dt>추천</dt>
+							<dd>4000회</dd>
+						</dl>
+						<!-- // 내용이 없을경우 삭제 -->
+					</div>
+					<div id="box2" class="vestige-content review-data"><!-- 내용이 없을경우 class에 review-null 추가 -->
+						<!-- 내용없을 경우 아래내용 삭제 -->
+						<div class="review-txt">
+							<span>2016.10.24 리뷰</span>
+							<p>오 지하철역에서 흐르는 음악 검색했는데 이 음악이네요~ 좋네요 오 지하철역에서 흐르는 음악 검색했는데 이 음악이네요~ 좋네요</p>
+						</div>
+						<!-- 곡, 앨범 
+						<div class="review-music">
+							<div class="review-music-img"><img src="//image.genie.co.kr/imageg/app/promo_2016/1212/artist-img.png" alt="아티스트이미지"></div>
+							<div class="review-music-txt">
+								<p>빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅</p>
+								<span>빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅빅뱅</span>
+							</div>
+							<div class="review-music-play"><a href="#" class="play ico">play</a></div>
+						</div>						
+						<!-- 아티스트 -->
+						<div class="review-music">
+							<div class="review-artist-img"><img src="//image.genie.co.kr/imageg/app/promo_2016/1212/artist-img.png" alt="아티스트이미지"></div>
+							<div class="review-music-txt">
+								<p>BIGBANG</p>
+								<span>남성/그룹/200,+2010년대</span>
+							</div>
+						</div>
+						<!-- // 내용없을 경우 삭제 -->
+					</div>					
+				</div>
+			</div>	
+			
+		<div class="genre-info">마이 > 마이스타일 맞춤추천 버튼을 선택하시면<br />선호장르의 추천앨범을 확인하실 수 있습니다.</div>
+	</div>
+</section>
+
+<!-- 뮤직궁합지수 -->
+<section class="result_area">
+	<h2>그렇다면,<br />genie***님과 지니의<br />뮤직 궁합지수는!!</h2>
+	<dl>
+		<!-- 신규 -->
+		<dt class="lv01">어서와<br />지니는 처음이지?^^</dt>
+		<dd>지니는 2018년도<br />회원님의 활동을 응원합니다!<br />완!전!</dd>
+
+		<!-- 50% 이상 -->
+		<dt class="lv02">50% 이하에 해당되는<br />궁합이십니다!</dt>
+		<dd>****님~ 많이 바쁘세요?<br />
+		만나기 힘드네요…ㅠ_ㅠ<br />
+		2018년은 지니와 매일 함께 하기로 약속해요!<br />
+		그만… 질척이라고요..?하핫! 싫긔^^<br />
+		그럼 오늘도 좋은 하루 되세요~(찡긋)
+		</dd>
+
+		<!-- 50% -->
+		<dt class="lv03">상위 50%에 해당되는<br />궁합이십니다!</dt>
+		<dd>앉으나 서나, genie***님 생각~<br />
+		앉으나 서나~~ (기웃기웃)<br />
+		2018년 더 좋은 음악과 서비스로<br />
+		내일도 모레도 또 만나요~<br />
+		저는 ****님 바라기~ 스토커 아니긔~^^
+		</dd>
+
+		<!-- 30% -->
+		<dt class="lv04">상위 30%에 해당되는<br />궁합이십니다!</dt>
+		<dd>흠… 스밍지수가 아주 초~~큼~ 아쉽긴 하지만,<br />
+		****님과 함께해 즐거웠습니다!<br />
+		2018년 계속해서 지니와 함께 하실꺼쥬?<br />
+		항상 취향저격 노래 들려 드리려 노력 할께요~!<br />
+		(꼬리 살랑살랑)
+		</dd>
+
+		<!-- 10% -->
+		<dt class="lv05">상위 10%에 해당되는<br />궁합이십니다!</dt>
+		<dd>오옷!!!! 우리 느낌 완전 있는데?!<br />
+		그래서 내일도 지니로 스밍 한다?! vs 안한다?!^^<br />
+		2018년 좋은 음악과 멋진 서비스로<br />
+		회원님의 곁을 지키겠습니다!<br />
+		genie***님 꽃길만 걸으소서~
+		</dd>
+
+		<!-- 1% -->
+		<dt class="lv06">상위 1%에 해당되는<br />궁합이십니다!</dt>
+		<dd>완전 슈퍼 그뤠잇~!!!!<br />
+		상위 1%의 회원이시네요~!! 넘나 영광인 것~<br />
+		함께 소리질러~ 뮤직이즈 마~라이프!!! YEYE!!!<br />
+		2018년 지금처럼 좋은 음악과 함께 매일 만나요~<br />
+		genie***님! 내 마음속에 저장~
+		</dd>
+	</dl>
+</section>
+<!--// 뮤직궁합지수 -->
+
+<!-- event -->
+<section class="event">
+	<div class="contents">
+		<h2>EVENT</h2>
+		<p>뮤직궁합이 마음에 드셨다면, 아래 좋아요 버튼을 눌러 주세요! 추첨을 통해 경품을 보내드립니다!</p>
+		<ul>	
+			<li>루트리 화장품 유기농 5종세트 10명</li>
+			<li>파파존스 피자 존스 페이버릿 30명</li>
+			<li>스타벅스 카페라떼 100명</li>
+		</ul>
+		<dl class="date">
+			<dt>이벤트 기간</dt>
+			<dd>2018.01.02 ~ 2018.01.14</dd>
+			<dt>당첨자 발표</dt>
+			<dd>2018.01.19</dd>
+			<dt>경품발송</dt>
+			<dd>2017.01.29</dd>
+		</dl>
+		<ul>
+			<li><a href="#" class="btn-like">뮤직궁합 좋아요♥</a></li>
+			<li><a href="#" class="btn-report-all">전체회원 뮤직궁합 보기</a></li>
+		</ul>	
+		<p>경품은 랜덤 추첨하여 기프티콘으로 발송드립니다. (단, 루트리 화장품은 실제 상품 발송)</p>
+	</div>
+</section>
+<!--// event -->
+
+<!-- SNS -->
+<section class="sns">
+	<h2>이벤트 공유하기</h2>
+	<ul>
+		<li><a href="#" class="btn-kakao">카카오톡 공유하기</a></li>
+		<li><a href="#" class="btn-fb">페이스북 공유하기</a></li>
+		<li><a href="#" class="btn-twitter">트위터 공유하기</a></li>
+	</ul>
+</section>
+<!--// SNS -->
+
+<section class="caution">
+	<h2>꼭 확인하세요!</h2>
+	<ul>
+		<li>이벤트 당첨자는 이벤트 종료 후, 당첨자 발표일에 공지 사항을 통해 확인 하실 수 있습니다.</li>
+		<li>경품은 사정에 따라 변경될 수 있으며, 비정상적인 참여에 의한 경품 당첨은 취소될 수 있습니다.</li>
+		<li>회원정보 연락처를 이벤트 종료 전까지 [회원정보](휴대폰 번호)에서 꼭 확인해 주세요.</li>
+		<li>연락처 오기재에 대한 책임은 당사가 지지 않습니다.</li>
+		<li>이벤트에 수집된 정보는 경품 전달을 위해서만 사용되며 이벤트 종료 및 경품 전달 완료 후 일주일 이내 모두 파기됩니다.</li>
+		<li>이벤트 관련 문의는 고객센터 1:1문의 또는 1577-5337를 이용해 주세요.</li>
+		<li>당첨자의 개인정보를 다음과 같이 제공합니다.
+			<ul>
+				<li>- 개인정보를 제공받는 자 : 지니뮤직, 케이티엠하우스</li>
+				<li>- 개인정보를 제공받는 자의 개인정보 이용 목적 : 당첨자 공지 및 경품 배송</li>
+				<li>- 제공하는 개인정보의 항목 : 지니 아이디, 휴대폰 번호, 주소</li>
+				<li>- 개인정보를 제공받는 자의 개인정보 보유 및 이용기간 : 경품 발송 종료 후 7일 이내</li>
+			</ul>
+		</li>
+	</ul>
+</section>
 
 </body>
 </html>

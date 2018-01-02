@@ -187,3 +187,74 @@ function setMain() {
 	});
 }
 
+
+
+// 그래프 JS
+$(function() {
+    $(".pie").each(function() {
+        var percent = $(this).data("percent"),
+            $left = $(this).find(".left span"),
+            $right = $(this).find(".right span"),
+            deg;
+        
+        if(percent<=50) {
+            // Hide left
+            $left.hide();
+            
+            // Adjust right
+            deg = 180 - (percent/100*360)
+            $right.css({
+                "-webkit-transform": "rotateZ(-"+deg+"deg)"
+            });
+        } else {
+            // Adjust left
+            deg = 180 - ((percent-50)/100*360)
+            $left.css({
+                "-webkit-transform": "rotateZ(-"+deg+"deg)"
+            });
+        }
+    });
+});
+
+// 발자국 JS
+$(function() {
+	$(".vestige-content").hide();
+	$(".vestige-content:first").show();
+	$("ul.boxs li").click(function () {
+		$("ul.boxs li").removeClass("active");
+		//$(this).addClass("active").css({"color":"darkred","font-weight":"bolder"});
+		$(this).addClass("active");
+		$(".vestige-content").hide()
+		var activebox = $(this).attr("rel");
+		$("#" + activebox).fadeIn()
+	});
+});
+
+
+$(function() {
+	//swiper
+	var swiper1 = new Swiper('.mymusic', {
+		pagination: '.music_list .swiper-pagination',
+		paginationClickable: true,
+		loop: true
+	});
+
+	var swiper2 = new Swiper('.best_artist', {
+		pagination: '.artist_list .swiper-pagination',
+		paginationClickable: true,
+		slidesPerView: 1.8,
+		centeredSlides: true,
+		 grabCursor: true,
+	});
+
+	//tab scroll
+	var nav = $('.tab');
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 500) {
+			nav.addClass("top-nav");
+		} else {
+			nav.removeClass("top-nav");
+		}
+	});
+
+});
