@@ -216,8 +216,10 @@ $(function() {
     });
 });
 
-// 발자국 JS
+
+
 $(function() {
+	// 발자국 JS
 	$(".vestige-content").hide();
 	$(".vestige-content:first").show();
 	$("ul.boxs li").click(function () {
@@ -228,10 +230,19 @@ $(function() {
 		var activebox = $(this).attr("rel");
 		$("#" + activebox).fadeIn()
 	});
-});
+	
+	// 키워드
+	$(".key_contents").hide();
+	$(".key_contents:first").show();
+	$("ul.keyword li").click(function () {
+		$("ul.keyword li").removeClass("active");
+		//$(this).addClass("active").css({"color":"darkred","font-weight":"bolder"});
+		$(this).addClass("active");
+		$(".key_contents").hide()
+		var activebox = $(this).attr("rel");
+		$("#" + activebox).fadeIn()
+	});
 
-
-$(function() {
 	//swiper
 	var swiper1 = new Swiper('.mymusic', {
 		pagination: '.music_list .swiper-pagination',
@@ -247,14 +258,14 @@ $(function() {
 		 grabCursor: true,
 	});
 
+	
 	//tab scroll
 	var nav = $('.tab');
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 500) {
+		if ($(this).scrollTop() > 434) {
 			nav.addClass("top-nav");
 		} else {
 			nav.removeClass("top-nav");
 		}
 	});
-
 });

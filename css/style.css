@@ -19,8 +19,8 @@ button::-moz-focus-inner {padding:0;border:0}
 .pd20{padding-bottom:20%;}
 .basic_btn{background:#27282d; border-radius:25px; font-size:16px; line-height:45px; width:100%; color:#fff}
 .basic_btn em{position:relative; padding-right:20px}
-.basic_btn em:after{background:url(../img/ico.png) no-repeat -48px 0; background-size:150px; content:""; position:absolute; right:0; top:2px; width:14px; height:15px;}
-.ico{background:url(../img/ico.png) no-repeat 0 0px; background-size:150px; }
+.basic_btn em:after{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico.png) no-repeat -48px 0; background-size:150px; content:""; position:absolute; right:0; top:2px; width:14px; height:15px;}
+.ico, .mv-ranking .more:after, .top5_list li .rate:after{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico.png) no-repeat 0 0px; background-size:150px; }
 
 /*	font 설정	*/
 @font-face {
@@ -41,7 +41,7 @@ button::-moz-focus-inner {padding:0;border:0}
 
 /* main visual */
 .mainvisual img{width:100%;}
-.mainvisual{position:relative; padding:0;}
+.mainvisual{position:relative; padding:0; background:#1a1b20;}
 .mainvisual .tab{width:100%; background:#1a1b20}
 .mainvisual .tab:after{content:""; display:block; clear:both; }
 .mainvisual .tab li{float:left; width:50%; background:#000000; border:3px solid #000; box-sizing:border-box; border-radius:10px 10px 0 0; position:relative;}
@@ -50,6 +50,7 @@ button::-moz-focus-inner {padding:0;border:0}
 .mainvisual .tab li.on:before{content:""; width:14px; height:14px; background:#87d6ff; left:45%; bottom:-11px; position:absolute; border-left:3px solid #000; border-bottom:3px solid #000; transform: rotate(-46deg);}
 .mainvisual .tab li.on a{color:#000}
 .mainvisual .tab.top-nav{position:fixed; top:0; left:0;z-index:10}
+.mainvisual h1{width:320px; margin:0 auto}
 
 /* 반짝반짝*/
 @keyframes blink { 
@@ -97,11 +98,11 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 
 /* top10 */
 .music_list{background:#fff5a1; padding:40px 18px}
-.music_list .mymusic{border:3px solid #1a1b20; background:#fff; border-radius:20px; padding:8px 0}
+.mymusic{border:3px solid #1a1b20; background:#fff; border-radius:20px; padding:8px 0}
 .top10{padding-left:35px; }
 .top10 li{position:relative;height:60px;border-top:1px solid #e9e9e9; padding:0 60px 0 56px;}
 .top10 li:first-child{border-top:none;}
-.top10 li em{font-size:16px; color:#1a1b20; position:absolute; left:-22px; top:20px;}
+.top10 li em{font-size:16px; color:#1a1b20; position:absolute; left: -28px; top:20px; width:20px; text-align:center; display:block;}
 .top10 li .play {display:block;position:absolute;top:15px;right:15px;width:28px;height:28px;text-align:center; background-position:-112px 0; text-indent:-9999px;}
 .top10 li .info {display:block;font-size:12px;color:#a0a0a0;white-space:nowrap;}
 .top10 li .info .thum{position:absolute; left:0; top:6px; width:48px; height:48px; display:block;}
@@ -113,6 +114,8 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .music_list .btnarea li{width:50%; float:left; padding-left:4px; box-sizing: border-box;}
 .music_list .btnarea li:first-child{width:50%; float:left; padding:0 4px 0 0;}
 .music_list .txt{font-size:13px; text-align:center; padding-top:25px}
+.music_list.orange{background:#db4a37}
+.music_list.orange h2, .music_list.orange .txt{color:#fff}
 
 /* artist */
 .artist_list.pd{padding:40px 18px}
@@ -120,10 +123,10 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .artist_list h2{color:#fff}
 .best_artist{padding-top:10px}
 .best_artist li{text-align:center; }
-.best_artist li .area{width:230px; margin:0 auto; }
-.best_artist li .thum .win{position:absolute; left:-15px; top:115px; width:210px; height:62px; background:url('../img/ribbon.png') no-repeat 0 0; background-size:100%; text-indent:-9999em; font-weight:normal; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
+.best_artist li .area{width:100%; margin:0 auto; }
+.best_artist li .thum .win{position:absolute; left:-18px; top:115px; width:210px; height:62px; background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/ribbon.png') no-repeat 0 0; background-size:100%; text-indent:-9999em; font-weight:normal; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
 .best_artist li.swiper-slide-active .win{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 0.5s, ease 0.3s;transition:opacity 0.5s, ease 0.3s;}
-.best_artist li .thum{width:170px; display:block; margin:0 30px; position:relative;}
+.best_artist li .thum{width:170px; display:block; margin:0 auto; position:relative;}
 .best_artist li .thum img{width:164px; height:164px; border: 3px solid #1a1b20; border-radius:50%; }
 .best_artist li .thum:after{position:absolute; left:0px; top:0px; border-radius:50%; width:100%; height:100%; content:""; background:rgba(0,0,0,0.4); }
 .best_artist li.swiper-slide-active .thum:after{background:rgba(0,0,0,0);}
@@ -134,8 +137,8 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .best_artist li.swiper-slide-active strong{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 1s, ease 1.3s;transition:opacity 1s, ease 1.3s;}
 .best_artist li strong em{display:inline-block; color:#fff5a1; line-height:19px; max-width: 172px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; }
 .artist_list .swiper-pagination{position:absolute; top:340px;}
-.best_artist li .basic_btn{position:absolute; left:0px; bottom:0px; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
-.best_artist li.swiper-slide-active .basic_btn{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 1s, ease 1s;transition:opacity 1s, ease 1s;}
+.best_artist .basic_btn{position:absolute; left:50%; bottom:0px; width:230px; -webkit-transform: translateX(-50%); ransform: translateX(-50%);}
+
 
 /* season */
 .season{background:#403967; padding:40px 18px; position:relative; overflow:hidden}
@@ -153,8 +156,8 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .winter{background:#4e7c98}
 
 .season-img-artist{border: 3px solid #1a1b20; border-radius:50%; box-sizing: border-box; overflow:hidden; width:125px; height:125px;}
-.season-img-artist img{width:100%;}
-.season-img-artist .null_txt{display:block; width:100%; text-align:center; color:#ffffff; font-size:13px; font-family: NanumSquareB; padding-top:28px}
+.season-img-artist img{width:100%; border-radius:50%;}
+.season-img-artist .null_txt{display:block; width:100%; text-align:center; color:#ffffff; font-size:12px; font-family: NanumSquareB; padding-top:28px}
 
 .season-null-spring span, .season-null-summer span, .season-null-fall span, .season-null-winter span{ display: block; width:100%; position:absolute; top:49%; margin: 0 auto; font-size:1.222rem; line-height: 120%; text-align: center; font-weight: 300; color: #27282d; z-index: 99999;}
 
@@ -162,11 +165,6 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .season-txt strong{width: 100%; overflow: hidden;  text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; /* 라인수 */ -webkit-box-orient: vertical; word-wrap:break-word; }
 .season-txt span{display: block; font-size:12px; color: #d2d1d9; overflow: hidden;  text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; /* 라인수 */ -webkit-box-orient: vertical; word-wrap:break-word; padding-top: 3px;}
 
-@media screen and (max-width: 320px){
-	.season-list{width:320px; margin:0 auto; }
-	.season-list:after{content:""; display:block; clear:both;}
-	.season-list li{position: relative; padding-left:8px; width:123px; height:200px; float: left; margin:0 5px 0;}
-}
 
 /* genre */
 .genre_area{background:#f2f2f2; padding:40px 18px; position:relative; overflow:hidden}
@@ -182,14 +180,17 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .genre ul li.genre-list-first{width:165px; height:165px; left:0; top:30px}
 .genre ul li.genre-list-first .circle-title{font-size:20px;}
 .genre ul li.genre-list-first .pie:after{font-size:27px; top: 60%;}
+.genre ul li.genre-list-first .pie:before{width:86%; height: 86%;}
 
 .genre ul li.genre-list-second{width:135px; height:135px; right:0px; top:0}
 .genre ul li.genre-list-second .circle-title{font-size:18px;}
 .genre ul li.genre-list-second .pie:after{font-size:25px; top:62%;}
+.genre ul li.genre-list-second .pie:before{width:83%; height: 83%;}
 
 .genre ul li.genre-list-third{width:107px; height:107px; left: 155px; top:150px}
 .genre ul li.genre-list-third .circle-title{font-size:15px;}
 .genre ul li.genre-list-third .pie:after{font-size:23px; top: 66%;}
+.genre ul li.genre-list-third .pie:before{width:80%; height: 80%;}
 
 .pie {position: relative; top:0; background-color: #dddddd; border-radius: 50%; width: 100%; height:100%; overflow: hidden; border: 3px solid #1a1b20; box-sizing: border-box;}
 .pie > div {float: left; width: 50%; height: 100%; position: relative; overflow: hidden;}
@@ -197,7 +198,7 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .pie .left span {border-top-right-radius: 0; border-bottom-right-radius: 0; -webkit-transform-origin: 100% 50%;}
 .pie .right span {border-top-left-radius: 0; border-bottom-left-radius: 0; -webkit-transform-origin: 0% 50%;}
 .pie:before, .pie:after {border-radius: 50%; display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translateX(-50%) translateY(-50%);}
-.pie:before {background-color: #efefee; content: ""; width:86%; height: 86%; z-index:2;}
+.pie:before {background-color: #efefee; content: "";  z-index:2;}
 .pie:after{content: attr(data-percent) "%"; z-index: 3; text-align: center; top: 59%;} 
 .genre-info{text-align:center; font-family: NanumSquareB; padding-top:25px;}
 
@@ -206,7 +207,7 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .vestige_area h2{color:#fff}
 .vestige_area .genre-info{text-align:center; font-family: NanumSquareB; padding-top:25px; color:#fff}
 .vestige{position:relative; width:320px; height:307px; margin:0 auto;}
-.vestige .boxs li{position:relative; width:123px; height:123px; float:left; margin:0 15px; background:url('../img/menu_vestige.png') no-repeat 0 0; background-size:250px; color:#ffffff;}
+.vestige .boxs li{position:relative; width:123px; height:123px; float:left; margin:0 15px; background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/menu_vestige.png') no-repeat 0 0; background-size:250px; color:#ffffff;}
 .vestige .boxs li span{position:absolute; top:40%; width:100%; text-align:center; font-size:35px; }
 
 .vestige .boxs li.vestige-menu1{background-position:left 3px; }
@@ -216,8 +217,8 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 
 .vestige-container{clear:both; position:absolute; top:110px; float:left; width:100%; z-index:9;}
 .vestige-container .vestige-content{width:100%; height:200px}
-.vestige-container .vestige-data{background:url('../img/vestige_tab_bg_r1.png') no-repeat; background-size:100%;}
-.vestige-container .review-data{background:url('../img/vestige_tab_bg_r1.png') 0 66.73% no-repeat; background-size:100%;}
+.vestige-container .vestige-data{background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/vestige_tab_bg_r1.png') no-repeat; background-size:100%;}
+.vestige-container .review-data{background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/vestige_tab_bg_r1.png') 0 66.73% no-repeat; background-size:100%;}
 
 .vestige-container .vestige-null{background-position:0 33.3333333333% !important; font-size:0 !important; line-height:0 !important; text-indent:-9999px !important;}
 .vestige-container .review-null{background-position:0 100% !important; font-size:0 !important; line-height:0 !important; text-indent:-9999px !important;}
@@ -249,9 +250,9 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .result_area h2{color:#fff}
 .result_area dl{width:300px; margin:0 auto; text-align:center; }
 .result_area dl dt{color:#fff391; font-family: NanumSquareB; font-size:23px; line-height:30px; padding-bottom:10px; padding-top:140px; position:relative;}
-.result_area dl dt:before{background:url(../img/ico_total.png) 0 0 no-repeat; background-size:300px; width:285px; height:122px; content:""; position:absolute;left: 8px; top:0;}
+.result_area dl dt:before{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico_total.png) 0 0 no-repeat; background-size:300px; width:285px; height:122px; content:""; position:absolute;left: 8px; top:0;}
 .result_area dl dd{color:#fff; font-size:16px;}
-.result_area dl dt:after{background:url(../img/ico_total.png) 0 0 no-repeat; background-size:300px; content:""; position:absolute; }
+.result_area dl dt:after{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico_total.png) 0 0 no-repeat; background-size:300px; content:""; position:absolute; }
 .result_area dl dt.lv01:after{background-position:-89px -217px; width:57px; height:61px; left:40px; top:30px;}
 .result_area dl dt.lv02:after{background-position:0 -220px; width:71px; height:36px; left:33px; top:40px;}
 .result_area dl dt.lv03:after{background-position:-222px -139px; width:35px; height:63px; left:51px; top:28px;}
@@ -260,19 +261,116 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .result_area dl dt.lv06:after{background-position:0 -139px; width:62px; height:57px; left:38px; top:30px;}
 
 /* 이벤트 */
-.event{height:673px; text-indent:-9999em; background:url(../img/bg_event.png) center 40px no-repeat #f6f6f6; background-size:320px 607px;}
+.event{height:673px; text-indent:-9999em; background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/bg_event.png) center 40px no-repeat #f6f6f6; background-size:320px 607px; overflow:hidden}
 .event .contents{width:320px; margin:0 auto; position:relative;}
 .event .contents .date{position:absolute; left:106px; top:383px; }
 .event .contents .date dt{display:none; }
-.event .contents .date dd{text-indent:0; font-size:16px; line-height: 28px;}
+.event .contents .date dd{text-indent:0; font-size:16px; line-height: 28px; width:270px;}
 .event .contents ul{position:absolute; left:44px; top:487px}
 .event .contents ul li a{width:230px; height:45px; margin-bottom:7px; display:block}
 
 /* sns */
-.sns{height:220px; text-indent:-9999em; background:url(../img/sns.png) center 30px no-repeat #ebebeb; background-size:220px 143px; position:relative;}
+.sns{height:220px; text-indent:-9999em; background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/sns.png) center 30px no-repeat #ebebeb; background-size:220px 143px; position:relative;}
 .sns ul{width:220px; margin:0 auto; padding-top:40px;}
 .sns ul li{float:left; width:60px; height:75px; margin-left:20px; }
 .sns ul li:first-child{margin-left:0px; }
 .sns ul li a{display:block; width:62px; height:85px;}
 
-.caution{height:416px; text-indent:-9999em; background:url(../img/caution.gif) center 30px no-repeat #333640; background-size:316px 353px; position:relative;}
+.caution{height:416px; text-indent:-9999em; background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/caution.gif) center 30px no-repeat #333640; background-size:316px 353px; position:relative;}
+
+/*키워드*/
+.music_list .contents{width:300px; margin:0 auto;}
+.keyword{text-align:center; }
+.keyword:after{content:""; display:block; clear:both;}
+.keyword li{border: 3px solid #1a1b20; border-radius:30px; background:#fff; color:#27282d; font-size:17px; line-height:31px; margin:5px; padding:0 18px; display:inline-block; font-family: NanumSquareB;}
+.keyword li.active{background:#87d6ff}
+.keyword_txt{text-align:center; font-size:17px; height: 170px;}
+.keyword_txt strong{color:#fb533d; font-size:25px; display:block; font-family: NanumSquareB; font-weight:normal; padding:20px 0 10px}
+
+/* mv-ranking */
+.mv{background:#403967; padding:40px 0 20px; position:relative; overflow:hidden}
+.mv h2{color:#fff}
+.mv-ranking ul{position:relative; width:360px; margin:0 auto;}
+.mv-ranking ul:after{content:""; display:block; clear:both;}
+.mv-ranking ul li{width:150px; height:153px; float:left; margin:0 15px; }
+.mv-ranking ul li .mv-box{width:150px; height:83px; position:relative; border: 3px solid #1a1b20; border-radius:20px; }
+.mv-ranking ul li .mv-box span{color:#fff5a1; position:absolute; left:4px; top:92px;}
+.mv-ranking ul li .mv-box img{width:150px; height:83px; border-radius:20px;}
+.mv-ranking .mv-txt{padding:7px 0 0 34px; color:#fff}
+.mv-ranking .mv-txt strong{font-family: NanumSquareB; font-weight:normal; display:block; width:100%; height:20px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; }
+.mv-ranking .mv-txt span{display:block; font-size:12px;  width:100%; height:16px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; }
+.mv-ranking .more{position:absolute; left:60px; top:20px; color:#fff; padding-top:27px;}
+.mv-ranking .more:after{position:absolute; top:0; left:6px; width:23px; height:23px; background-position:0 -24px; content:"";}
+
+/* 아티스트 top5 */
+.at_top5{border:3px solid #1a1b20; background:#fff; border-radius:20px; padding:8px 0}
+.top5_list{padding-left:95px}
+.top5_list li{width:100%; height:76px; padding-right:85px; border-top:1px solid #e9e9e9; position:relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.top5_list li:first-child{border-top:none;}
+.top5_list li .thum{width:60px; height:60px; border:3px solid #1a1b20; text-align:center; overflow:hidden; border-radius:50%; position:absolute; left:-80px; top:5px;}
+.top5_list li .thum img{width:100%;}
+.top5_list li strong{display:block; width:100%; font-family: NanumSquareB; font-weight:normal; height:40px; line-height: 60px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis; -moz-text-overflow:ellipsis; }
+.top5_list li .rate{position:absolute; right:14px; bottom:14px; padding-left:15px; display:block;width: 45px;}
+.top5_list li .rate:after{content:""; position:absolute; left:0; top:4px; width:13px; height:12px; background-position:-33px -24px}
+.top5_list li .graph{float:left; width:100%; margin-top:7px; position:relative; height:7px; background:#e9e9e9;overflow:hidden; border-radius:20px;}
+.top5_list li .graph span{display:block;position:absolute;top:0;left:0;width:0;height:100%;background:#fb533d;font-size:0;line-height:0;text-indent:-9999px; border-radius:20px;}
+
+.best_play .top10 li{padding: 0 92px 0 56px;}
+.best_play .top10 .song{display:block;position:absolute;top:18px;right:55px; font-size:12px; }
+.best_play .top10 .song em{display:block; font-size:14px; position:static; text-align:right; width:100%; line-height: 10px;}
+
+@media screen and (max-width: 320px){
+	.season-list{width:320px; margin:0 auto; }
+	.season-list:after{content:""; display:block; clear:both;}
+	.season-list li{position: relative; padding-left:8px; width:123px; height:200px; float: left; margin:0 5px 0;}
+	section h2{font-size:22px}
+	.mv-ranking ul{width:320px;}
+	.mv-ranking ul li{margin:0 5px}
+	.genre_area{padding: 40px 0}
+	.vestige_area{padding: 40px 0}
+	.best_artist li strong{font-size:14px}
+}
+
+/** 공통 팝업 스타일 **/
+.mtb-popup {display:none;position:relative;width:87.5%;max-width:560px; }
+.mtb-content {background-color:#fff;max-width:560px;border-radius:0;}
+.mtb-popup .mtb-hd {position:relative;width:100%;height:40px;line-height:40px;background-color:#05b5e5;text-align:center;border-radius:0; }
+.mtb-popup .mtb-hd h3 {color:#fff;font-size:14px;font-weight:normal}
+.mtb-popup .mtb-scroll {overflow-y:auto;-webkit-overflow-scrolling:touch}
+.mtb-popup .mtb-bd {background-color:#fff;line-height:1.5;color:#333333;text-align:center;padding:15px 0;font-size:12px}
+.mtb-popup .mtb-bd .ipt-form {position:relative;padding:0 0 0 32%;overflow:hidden}
+.mtb-popup .mtb-bd label {display:block;position:absolute;top:3.5px;left:0;width:30.357%;text-align:right;font-size:14px;color:#282828}
+.mtb-popup .mtb-bd .ipt {display:block;float:left;width:26.31578947368%;height:26px;border:1px solid #d6d6d6;background-color:#ebebeb;color:#282828;font-size:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-align:center;border-radius:0;-webkit-appearance:none}
+.mtb-popup .mtb-bd .bar {display:block;width:2.631578947368%;height:1px;float:left;margin:13px 1.31578947368% 0;background-color:#bfbfbf;text-indent:-9999px}
+.mtb-popup .mtb-ft {position:relative;width:100%;height:40px;overflow:hidden;line-height:40px;border-top:1px solid #e6e6e6;text-align:center}
+.mtb-popup .mtb-ft a {width:100%;height:100%;display:inline-block;text-decoration:none;font-size:14px;color:#282828;font-weight:normal}
+.mtb-popup .mtb-ft.half a {width:50%;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.mtb-popup .mtb-ft.half a + a {border-left:1px solid #e6e6e6;}
+.mtb-popup .desc {display:block;padding-top:6px;font-size:11px;color:#05b5e5 !important}
+.mtb-popup .blue {color:#05b5e5 !important}
+
+/* 공통 팝업 스타일 추가 제3자 제공동의*/
+.mtb-popup .mtb-bd.large {padding:0;}
+.mtb-popup .mtb-bd .wrap-bg-1 {background-color:#fff;padding:12px 15px;}
+.mtb-popup .mtb-bd .wrap-bg-2 {background-color:#f5f5f5;color:#929292;border-bottom:1px solid #e6e6e6;padding:12px 15px;}
+.mtb-popup .mtb-bd .list-1 {text-align:left;margin-top:7px;}
+.mtb-popup .mtb-bd .list-1 li {position:relative;padding-left:7px;font-size:9px;line-height:12px;color:#929292;}
+.mtb-popup .mtb-bd .list-1 li:after {content:"";position:absolute;top:4px;left:0;width:2px;height:2px;border-radius:2px;background-color:#929292;display:block;}
+.mtb-popup .mtb-bd .list-1 li a.info-link{color:red !important; text-decoration:underline !important;}
+.mtb-popup .mtb-bd h4 {text-align:left;margin-top:10px;color:#333;}
+.mtb-popup .mtb-bd .icon-ek {position:relative;padding-left:14px;font-size:9px;line-height:12px;text-align:left;color:#929292;}
+.mtb-popup .mtb-bd .icon-ek:after {content:"!";position:absolute;top:1px;left:0;width:10px;height:10px;display:block;border-radius:10px;background-color:#929292;color:#fff;font-weight:bold;text-align:center;font-size:7px;line-height:10px;}
+.mtb-popup .mtb-bd .box_dl {margin-top:4px;}
+.mtb-popup .mtb-bd .box_dl dl {border-top:1px solid #e6e6e6;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;padding:11px 20px;}
+.mtb-popup .mtb-bd .box_dl dl:after{content:"";display:block;clear:both}
+.mtb-popup .mtb-bd .box_dl dl dt {width:30%;display:inline-block;color:#333333;font-size:12px;text-align:left;vertical-align:middle;}
+.mtb-popup .mtb-bd .box_dl dl dd {width:70%;display:inline-block;color:#929292;font-size:12px;text-align:left;vertical-align:middle;}
+.mtb-popup .mtb-bd .box_dl dl dd a {color:#929292 !important;}
+.mtb-popup .mtb-bd .box_dl dl.first {border-radius:5px 5px 0 0;}
+.mtb-popup .mtb-bd .box_dl dl.last {border-bottom:1px solid #e6e6e6;border-radius:0 0 5px 5px;}
+
+/* 앱 다운 */
+.pop_landing {width:100%;max-width:640px;}
+.mtb-app-down {width:80%;height:0;padding-top:46.5%;overflow:hidden;background:url('//image.genie.co.kr/imageg/app/promo_2016/1128/pop_landing.png') 50% 0 no-repeat;background-size:100% auto; margin:0 auto;}
+.mtb-app-down .btn_landing{position:absolute;top:0;left:10%;right:10%;height:41%;display:block;font-size:0;line-height:0;text-indent:-9999px;}
+.mtb-app-down .layer-close{position:absolute;bottom:20%;left:35%;right:35%;height:20%;display:block;font-size:0;line-height:0;text-indent:-9999px;}
