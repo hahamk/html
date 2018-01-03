@@ -258,11 +258,17 @@ $(function() {
 		 grabCursor: true,
 	});
 
+	var swiper3 = new Swiper('.bestmusic', {
+		pagination: '.best_list .swiper-pagination',
+		paginationClickable: true,
+		loop: true
+	});
+
 	
 	//tab scroll
 	var nav = $('.tab');
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 434) {
+		if ($(this).scrollTop() > 450) {
 			nav.addClass("top-nav");
 		} else {
 			nav.removeClass("top-nav");

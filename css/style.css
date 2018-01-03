@@ -19,8 +19,8 @@ button::-moz-focus-inner {padding:0;border:0}
 .pd20{padding-bottom:20%;}
 .basic_btn{background:#27282d; border-radius:25px; font-size:16px; line-height:45px; width:100%; color:#fff}
 .basic_btn em{position:relative; padding-right:20px}
-.basic_btn em:after{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico.png) no-repeat -48px 0; background-size:150px; content:""; position:absolute; right:0; top:2px; width:14px; height:15px;}
-.ico, .mv-ranking .more:after, .top5_list li .rate:after{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico.png) no-repeat 0 0px; background-size:150px; }
+.basic_btn em:after{background:url(../img/ico.png) no-repeat -48px 0; background-size:150px; content:""; position:absolute; right:0; top:2px; width:14px; height:15px;}
+.ico, .mv-ranking .more:after, .top5_list li .rate:after{background:url(../img/ico.png) no-repeat 0 0px; background-size:150px; }
 
 /*	font 설정	*/
 @font-face {
@@ -41,7 +41,7 @@ button::-moz-focus-inner {padding:0;border:0}
 
 /* main visual */
 .mainvisual img{width:100%;}
-.mainvisual{position:relative; padding:0; background:#1a1b20;}
+.mainvisual{position:relative; padding:0;}
 .mainvisual .tab{width:100%; background:#1a1b20}
 .mainvisual .tab:after{content:""; display:block; clear:both; }
 .mainvisual .tab li{float:left; width:50%; background:#000000; border:3px solid #000; box-sizing:border-box; border-radius:10px 10px 0 0; position:relative;}
@@ -50,7 +50,6 @@ button::-moz-focus-inner {padding:0;border:0}
 .mainvisual .tab li.on:before{content:""; width:14px; height:14px; background:#87d6ff; left:45%; bottom:-11px; position:absolute; border-left:3px solid #000; border-bottom:3px solid #000; transform: rotate(-46deg);}
 .mainvisual .tab li.on a{color:#000}
 .mainvisual .tab.top-nav{position:fixed; top:0; left:0;z-index:10}
-.mainvisual h1{width:320px; margin:0 auto}
 
 /* 반짝반짝*/
 @keyframes blink { 
@@ -110,12 +109,15 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .top10 li .info .thum img{width:100%}
 .top10 li .info .title {display:block;width:auto;max-width:100%;padding:13px 0 2px;font-size:14px;line-height:16px;color:#454b54;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
 .top10 li .info .artist{display:block;width:auto;max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
-.music_list .btnarea:after{content:""; display:block; clear:both}
-.music_list .btnarea li{width:50%; float:left; padding-left:4px; box-sizing: border-box;}
-.music_list .btnarea li:first-child{width:50%; float:left; padding:0 4px 0 0;}
+.btnarea:after{content:""; display:block; clear:both}
+.btnarea li{width:50%; float:left; padding-left:4px; box-sizing: border-box;}
+.btnarea li:first-child{width:50%; float:left; padding:0 4px 0 0;}
 .music_list .txt{font-size:13px; text-align:center; padding-top:25px}
-.music_list.orange{background:#db4a37}
-.music_list.orange h2, .music_list.orange .txt{color:#fff}
+
+.best_list{background:#db4a37; padding:40px 18px}
+.best_list h2, .best_list .txt{color:#fff}
+.best_list .txt{font-size:13px; text-align:center; padding-top:25px}
+.bestmusic{border:3px solid #1a1b20; background:#fff; border-radius:20px; padding:8px 0}
 
 /* artist */
 .artist_list.pd{padding:40px 18px}
@@ -124,7 +126,7 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .best_artist{padding-top:10px}
 .best_artist li{text-align:center; }
 .best_artist li .area{width:100%; margin:0 auto; }
-.best_artist li .thum .win{position:absolute; left:-18px; top:115px; width:210px; height:62px; background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/ribbon.png') no-repeat 0 0; background-size:100%; text-indent:-9999em; font-weight:normal; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
+.best_artist li .thum .win{position:absolute; left:-18px; top:115px; width:210px; height:62px; background:url('../img/ribbon.png') no-repeat 0 0; background-size:100%; text-indent:-9999em; font-weight:normal; opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:none;transition:none}
 .best_artist li.swiper-slide-active .win{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); -webkit-transition:opacity 0.5s, ease 0.3s;transition:opacity 0.5s, ease 0.3s;}
 .best_artist li .thum{width:170px; display:block; margin:0 auto; position:relative;}
 .best_artist li .thum img{width:164px; height:164px; border: 3px solid #1a1b20; border-radius:50%; }
@@ -207,7 +209,7 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .vestige_area h2{color:#fff}
 .vestige_area .genre-info{text-align:center; font-family: NanumSquareB; padding-top:25px; color:#fff}
 .vestige{position:relative; width:320px; height:307px; margin:0 auto;}
-.vestige .boxs li{position:relative; width:123px; height:123px; float:left; margin:0 15px; background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/menu_vestige.png') no-repeat 0 0; background-size:250px; color:#ffffff;}
+.vestige .boxs li{position:relative; width:123px; height:123px; float:left; margin:0 15px; background:url('../img/menu_vestige.png') no-repeat 0 0; background-size:250px; color:#ffffff;}
 .vestige .boxs li span{position:absolute; top:40%; width:100%; text-align:center; font-size:35px; }
 
 .vestige .boxs li.vestige-menu1{background-position:left 3px; }
@@ -217,8 +219,8 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 
 .vestige-container{clear:both; position:absolute; top:110px; float:left; width:100%; z-index:9;}
 .vestige-container .vestige-content{width:100%; height:200px}
-.vestige-container .vestige-data{background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/vestige_tab_bg_r1.png') no-repeat; background-size:100%;}
-.vestige-container .review-data{background:url('//image.genie.co.kr/imageg/app/promo_2018/mymusic/vestige_tab_bg_r1.png') 0 66.73% no-repeat; background-size:100%;}
+.vestige-container .vestige-data{background:url('../img/vestige_tab_bg_r1.png') no-repeat; background-size:100%;}
+.vestige-container .review-data{background:url('../img/vestige_tab_bg_r1.png') 0 66.73% no-repeat; background-size:100%;}
 
 .vestige-container .vestige-null{background-position:0 33.3333333333% !important; font-size:0 !important; line-height:0 !important; text-indent:-9999px !important;}
 .vestige-container .review-null{background-position:0 100% !important; font-size:0 !important; line-height:0 !important; text-indent:-9999px !important;}
@@ -250,9 +252,9 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .result_area h2{color:#fff}
 .result_area dl{width:300px; margin:0 auto; text-align:center; }
 .result_area dl dt{color:#fff391; font-family: NanumSquareB; font-size:23px; line-height:30px; padding-bottom:10px; padding-top:140px; position:relative;}
-.result_area dl dt:before{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico_total.png) 0 0 no-repeat; background-size:300px; width:285px; height:122px; content:""; position:absolute;left: 8px; top:0;}
+.result_area dl dt:before{background:url(../img/ico_total.png) 0 0 no-repeat; background-size:300px; width:285px; height:122px; content:""; position:absolute;left: 8px; top:0;}
 .result_area dl dd{color:#fff; font-size:16px;}
-.result_area dl dt:after{background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/ico_total.png) 0 0 no-repeat; background-size:300px; content:""; position:absolute; }
+.result_area dl dt:after{background:url(../img/ico_total.png) 0 0 no-repeat; background-size:300px; content:""; position:absolute; }
 .result_area dl dt.lv01:after{background-position:-89px -217px; width:57px; height:61px; left:40px; top:30px;}
 .result_area dl dt.lv02:after{background-position:0 -220px; width:71px; height:36px; left:33px; top:40px;}
 .result_area dl dt.lv03:after{background-position:-222px -139px; width:35px; height:63px; left:51px; top:28px;}
@@ -261,7 +263,7 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .result_area dl dt.lv06:after{background-position:0 -139px; width:62px; height:57px; left:38px; top:30px;}
 
 /* 이벤트 */
-.event{height:673px; text-indent:-9999em; background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/bg_event.png) center 40px no-repeat #f6f6f6; background-size:320px 607px; overflow:hidden}
+.event{height:673px; text-indent:-9999em; background:url(../img/bg_event.png) center 40px no-repeat #f6f6f6; background-size:320px 607px; overflow:hidden}
 .event .contents{width:320px; margin:0 auto; position:relative;}
 .event .contents .date{position:absolute; left:106px; top:383px; }
 .event .contents .date dt{display:none; }
@@ -270,19 +272,19 @@ section h2{color:#27282d; font-size:25px; text-align:center; padding:0 0 15px; l
 .event .contents ul li a{width:230px; height:45px; margin-bottom:7px; display:block}
 
 /* sns */
-.sns{height:220px; text-indent:-9999em; background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/sns.png) center 30px no-repeat #ebebeb; background-size:220px 143px; position:relative;}
+.sns{height:220px; text-indent:-9999em; background:url(../img/sns.png) center 30px no-repeat #ebebeb; background-size:220px 143px; position:relative;}
 .sns ul{width:220px; margin:0 auto; padding-top:40px;}
 .sns ul li{float:left; width:60px; height:75px; margin-left:20px; }
 .sns ul li:first-child{margin-left:0px; }
 .sns ul li a{display:block; width:62px; height:85px;}
 
-.caution{height:416px; text-indent:-9999em; background:url(//image.genie.co.kr/imageg/app/promo_2018/mymusic/caution.gif) center 30px no-repeat #333640; background-size:316px 353px; position:relative;}
+.caution{height:416px; text-indent:-9999em; background:url(../img/caution.gif) center 30px no-repeat #333640; background-size:316px 353px; position:relative;}
 
 /*키워드*/
 .music_list .contents{width:300px; margin:0 auto;}
 .keyword{text-align:center; }
 .keyword:after{content:""; display:block; clear:both;}
-.keyword li{border: 3px solid #1a1b20; border-radius:30px; background:#fff; color:#27282d; font-size:17px; line-height:31px; margin:5px; padding:0 18px; display:inline-block; font-family: NanumSquareB;}
+.keyword li{border: 3px solid #1a1b20; border-radius:30px; background:#fff; color:#27282d; font-size:17px; height:32px; line-height:34px; margin:5px; padding:0 18px; display:inline-block; font-family: NanumSquareB;}
 .keyword li.active{background:#87d6ff}
 .keyword_txt{text-align:center; font-size:17px; height: 170px;}
 .keyword_txt strong{color:#fb533d; font-size:25px; display:block; font-family: NanumSquareB; font-weight:normal; padding:20px 0 10px}
